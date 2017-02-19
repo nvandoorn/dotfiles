@@ -86,3 +86,4 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 alias cdrio='cd ~/Documents/rio/'
+alias cdlogclient='cd ~/Documents/logclient'
