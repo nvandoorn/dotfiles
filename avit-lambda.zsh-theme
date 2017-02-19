@@ -1,4 +1,5 @@
 # AVIT ZSH Theme
+# from https://github.com/robbyrussell/oh-my-zsh/blob/master/themes/avit.zsh-theme
 
 PROMPT='
 $(_user_host)${_current_dir} $(git_prompt_info) $(_ruby_version)
