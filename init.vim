@@ -1,6 +1,9 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'mhartington/oceanic-next'
+Plug 'Shougo/unite.vim'
+Plug 'vimlab/neojs'
+Plug 'mxw/vim-jsx'
 
 call plug#end()
 
@@ -16,3 +19,9 @@ endif
 " Theme
 syntax enable
 colorscheme OceanicNext
+
+let g:deoplete#enable_at_startup = 1
+let mapleader=" "
+set number 
+let g:jsx_ext_required = 0
+
