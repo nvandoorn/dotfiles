@@ -85,5 +85,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+
 alias cdrio='cd ~/Documents/rio/'
 alias cdlogclient='cd ~/Documents/logclient'
+alias cddotfiles='cd ~/Documents/dotfiles'
