@@ -1,9 +1,9 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'mhartington/oceanic-next'
-Plug 'Shougo/unite.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'}
 Plug 'mxw/vim-jsx'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
