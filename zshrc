@@ -90,5 +90,5 @@ export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 alias cdrio='cd ~/Documents/rio/'
-alias cdlogclient='cd ~/Documents/logclient'
+alias cdslask='cd ~/Documents/slask'
 alias cddotfiles='cd ~/Documents/dotfiles'
