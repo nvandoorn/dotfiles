@@ -4,4 +4,5 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs /
 ln -s "$PWD/zshrc" ~/.zshrc
 ln -s "$PWD/init.vim" ~/.config/nvim/init.vim
 ln -s "$PWD/avit-lambda.zsh-theme" ~/.oh-my-zsh/themes
+ln -s "$PWD/gitconfig" ~/.gitconfig
 
