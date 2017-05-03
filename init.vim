@@ -17,7 +17,6 @@ set shiftwidth=2
 set expandtab
 set ai
 set number
-imap jj <Esc>
 
 if (has("termguicolors"))
  set termguicolors
@@ -30,3 +29,6 @@ let g:airline_powerline_fonts = 1
 let g:jsx_ext_required = 0
 let g:deoplete#enable_at_startup = 1
 let mapleader=" "
+
+autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
