@@ -93,3 +93,4 @@ export EDITOR="$VISUAL"
 alias cdrio='cd ~/Documents/rio/'
 alias cdslask='cd ~/Documents/slask'
 alias cddotfiles='cd ~/Documents/dotfiles'
+alias comnotes='nvim Google\ Drive/School/University/Third\ Year/First\ Semester/COM\ 250/Notebook.md'
