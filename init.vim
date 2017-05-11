@@ -1,3 +1,13 @@
+function! BuildComposer(info)
+  if a:info.status != 'unchanged' || a:info.force
+    if has('nvim')
+      !cargo build --release
+    else
+      !cargo build --release --no-default-features --features json-rpc
+    endif
+  endif
+endfunction
+
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'mhartington/oceanic-next'
@@ -9,6 +19,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'isRuslan/vim-es6'
+Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 
 call plug#end()
 
@@ -30,5 +41,8 @@ let g:jsx_ext_required = 0
 let g:deoplete#enable_at_startup = 1
 let mapleader=" "
 
-autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+set spelllang=en
+au BufRead *.md setlocal spell
+au BufRead *.markdown setlocal spell
