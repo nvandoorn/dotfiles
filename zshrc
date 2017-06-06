@@ -90,6 +90,13 @@ export NVM_DIR="$HOME/.nvm"
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
+export TTC_REPOS='~/Documents/slask,~/Documents/portfolio,~/Documents/dotfiles'
+export TTC_REPOS_DEPTH=2
+export TTC_GITBOT='gitlog'
+export TTC_WEATHER='Victoria, BC'
+export TTC_SAY_BOX='parrot'
+export TTC_APIKEYS=false
+
 alias cdrio='cd ~/Documents/rio/'
 alias cdslask='cd ~/Documents/slask'
 alias cdport='cd ~/Documents/portfolio'
