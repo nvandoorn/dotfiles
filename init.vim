@@ -28,6 +28,11 @@ set shiftwidth=2
 set expandtab
 set ai
 set number
+set mouse=a
+nnoremap ; :
+nnoremap : ;
+
+autocmd BufNewFile,BufRead *.css set syntax=scss
 
 if (has("termguicolors"))
  set termguicolors
