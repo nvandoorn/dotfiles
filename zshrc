@@ -90,7 +90,7 @@ export NVM_DIR="$HOME/.nvm"
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
-export TTC_REPOS='~/Documents/slask,~/Documents/portfolio,~/Documents/dotfiles'
+export TTC_REPOS='~/Documents/slask,~/Documents/portfolio,~/Documents/dotfiles,~/Documents/getslask.com,~/Documents/webpack2-react-starter,~/Documents/BRNKL-app'
 export TTC_REPOS_DEPTH=2
 export TTC_GITBOT='gitlog'
 export TTC_WEATHER='Victoria, BC'
@@ -101,5 +101,6 @@ alias cdrio='cd ~/Documents/rio/'
 alias cdslask='cd ~/Documents/slask'
 alias cdport='cd ~/Documents/portfolio'
 alias cddotfiles='cd ~/Documents/dotfiles'
+alias cdbrnkl='cd ~/Documents/BRNKL-app'
 alias comdefs='nvim ~/Google\ Drive/School/University/Third\ Year/First\ Semester/COM\ 250/Definitions.md'
 alias comnotes='nvim ~/Google\ Drive/School/University/Third\ Year/First\ Semester/COM\ 250/Notebook.md'
