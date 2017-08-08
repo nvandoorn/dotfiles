@@ -97,10 +97,17 @@ export TTC_WEATHER='Victoria, BC'
 export TTC_SAY_BOX='parrot'
 export TTC_APIKEYS=false
 
+alias vi=nvim
+alias gs='git status'
+alias gdc='git diff --cached'
+alias gd='git diff'
+alias gac='git add-commit'
+alias ga='git add'
+alias gc='git commit'
+
 alias cdrio='cd ~/Documents/rio/'
 alias cdslask='cd ~/Documents/slask'
 alias cdport='cd ~/Documents/portfolio'
 alias cddotfiles='cd ~/Documents/dotfiles'
-alias cdbrnkl='cd ~/Documents/BRNKL-app'
-alias comdefs='nvim ~/Google\ Drive/School/University/Third\ Year/First\ Semester/COM\ 250/Definitions.md'
-alias comnotes='nvim ~/Google\ Drive/School/University/Third\ Year/First\ Semester/COM\ 250/Notebook.md'
+alias cdbapp='cd ~/Documents/BRNKL-app'
+alias cdbiot='cd ~/Documents/BRNKL-IoT-Server'
