@@ -21,8 +21,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'isRuslan/vim-es6'
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 Plug 'leafgarland/typescript-vim'
-Plug 'akz92/vim-ionic2'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'akz92/vim-ionic2'
 
 call plug#end()
 
@@ -32,6 +32,7 @@ set expandtab
 set ai
 set number
 set mouse=a
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/platforms/*,*/plugins/*
 nnoremap ; :
 nnoremap : ;
 
