@@ -104,6 +104,7 @@ alias gd='git diff'
 alias gac='git add-commit'
 alias ga='git add'
 alias gc='git commit'
+alias gpo='git push origin'
 
 alias cdrio='cd ~/Documents/rio/'
 alias cdslask='cd ~/Documents/slask'
