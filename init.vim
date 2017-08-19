@@ -36,15 +36,13 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/platforms/*,*/plugin
 nnoremap ; :
 nnoremap : ;
 
-autocmd BufNewFile,BufRead *.css set syntax=scss
-
 if (has("termguicolors"))
  set termguicolors
 endif
 
 syntax enable
 colorscheme OceanicNext
-let g:airline_theme='wombat'
+let g:airline_theme='oceanicnext'
 let g:airline_powerline_fonts = 1
 let g:jsx_ext_required = 0
 let g:deoplete#enable_at_startup = 1
