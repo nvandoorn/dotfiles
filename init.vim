@@ -35,6 +35,8 @@ set mouse=a
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/platforms/*,*/plugins/*
 nnoremap ; :
 nnoremap : ;
+nnoremap    v   <C-V>
+nnoremap <C-V>     v
 
 if (has("termguicolors"))
  set termguicolors
