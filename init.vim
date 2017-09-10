@@ -32,7 +32,7 @@ set expandtab
 set ai
 set number
 set mouse=a
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/platforms/*,*/plugins/*
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/platforms/*,*/plugins/*,*/coverage/*,*/.nyc_output/*
 nnoremap ; :
 nnoremap : ;
 
