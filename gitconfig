@@ -14,3 +14,7 @@
 	tool = vimdiff
 [mergetool]
 	path = nvim
+[color]
+	ui = auto
+[credential]
+	helper = cache
