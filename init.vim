@@ -27,10 +27,12 @@ Plug 'akz92/vim-ionic2'
 call plug#end()
 
 set tabstop=2
-set shiftwidth=2
 set expandtab
+set shiftwidth=2
+set softtabstop=2
 set ai
 set number
+set relativenumber
 set mouse=a
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/platforms/*,*/plugins/*,*/coverage/*,*/.nyc_output/*
 nnoremap ; :
@@ -46,7 +48,6 @@ let g:airline_theme='oceanicnext'
 let g:airline_powerline_fonts = 1
 let g:jsx_ext_required = 0
 let g:deoplete#enable_at_startup = 1
-let mapleader=" "
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
