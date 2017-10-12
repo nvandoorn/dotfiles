@@ -90,7 +90,7 @@ export NVM_DIR="$HOME/.nvm"
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
-export TTC_REPOS='~/Documents/slask,~/Documents/portfolio,~/Documents/dotfiles,~/Documents/getslask.com,~/Documents/webpack2-react-starter,~/Documents/BRNKL-app,~/Documents/BRNKL-IoT-Server,~/Documents/brnkl-firebase-functions'
+export TTC_REPOS='~/Documents/slask,~/Documents/portfolio,~/Documents/dotfiles,~/Documents/getslask.com,~/Documents/webpack2-react-starter,~/Documents/BRNKL-app,~/Documents/BRNKL-IoT-Server,~/Documents/BRNKL-rest-api'
 export TTC_REPOS_DEPTH=2
 export TTC_GITBOT='gitlog'
 export TTC_WEATHER='Victoria, BC'
@@ -108,12 +108,14 @@ alias gpo='git push origin'
 alias gr='git reset'
 alias grh='git reset --hard'
 alias gb='git branch'
-alias gc='git checkout'
+alias gch='git checkout'
 
 alias cdrio='cd ~/Documents/rio/'
 alias cdslask='cd ~/Documents/slask'
 alias cdport='cd ~/Documents/portfolio'
 alias cddotfiles='cd ~/Documents/dotfiles'
 alias cdbapp='cd ~/Documents/BRNKL-app'
+alias cdbapi='cd ~/Documents/BRNKL-rest-api'
 alias cdbiot='cd ~/Documents/BRNKL-IoT-Server'
-alias cdbfunc='cd ~/Documents/brnkl-firebase-functions'
+alias cdbwiki='cd ~/Documents/BRNKL-IoT-Server.wiki'
+alias sshlegato='ssh nick@192.168.0.160'
