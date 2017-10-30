@@ -118,9 +118,9 @@ alias cddotfiles='cd ~/Documents/dotfiles'
 
 alias cdbapp='cd ~/Documents/BRNKL-app'
 alias cdbfunc='cd ~/Documents/BRNKL-functions'
+alias cdbmang='cd ~/Documents/BRNKL_MangOH'
 alias cdbwiki='cd ~/Documents/BRNKL-functions.wiki'
 alias sshlegato='ssh nick@192.168.0.118'
-
 alias cfglegato cfglegato='pushd . && cd ~/Documents/legato_framework/legato && source ./bin/configlegatoenv ; popd'
 
 if [[ `uname` == 'Linux' ]]; then
