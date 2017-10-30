@@ -115,12 +115,11 @@ alias cdrio='cd ~/Documents/rio/'
 alias cdslask='cd ~/Documents/slask'
 alias cdport='cd ~/Documents/portfolio'
 alias cddotfiles='cd ~/Documents/dotfiles'
+
 alias cdbapp='cd ~/Documents/BRNKL-app'
-alias cdbapi='cd ~/Documents/BRNKL-rest-api'
-alias cdbiot='cd ~/Documents/BRNKL-IoT-Server'
-alias cdbwiki='cd ~/Documents/BRNKL-IoT-Server.wiki'
-alias sshlegato='ssh nick@192.168.0.160'
-alias cdbfunc='cd ~/Documents/brnkl-firebase-functions'
+alias cdbfunc='cd ~/Documents/BRNKL-functions'
+alias cdbwiki='cd ~/Documents/BRNKL-functions.wiki'
+alias sshlegato='ssh nick@192.168.0.118'
 
 alias cfglegato cfglegato='pushd . && cd ~/Documents/legato_framework/legato && source ./bin/configlegatoenv ; popd'
 
