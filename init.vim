@@ -10,7 +10,8 @@ endfunction
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'mhartington/oceanic-next'
+Plug 'morhetz/gruvbox'
+Plug 'joshdick/onedark.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'}
 Plug 'mxw/vim-jsx'
 Plug 'jiangmiao/auto-pairs'
@@ -43,8 +44,10 @@ if (has("termguicolors"))
 endif
 
 syntax enable
-colorscheme OceanicNext
-let g:airline_theme='oceanicnext'
+colorscheme gruvbox
+set background=dark
+let g:gruvbox_contrast_dark='soft'
+let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
 let g:jsx_ext_required = 0
 let g:deoplete#enable_at_startup = 1
