@@ -10,7 +10,7 @@ endfunction
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'morhetz/gruvbox'
+Plug 'mhartington/oceanic-next'
 Plug 'joshdick/onedark.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'}
 Plug 'mxw/vim-jsx'
@@ -19,7 +19,7 @@ Plug 'neomake/neomake'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'isRuslan/vim-es6'
+Plug 'othree/yajs.vim'
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 Plug 'leafgarland/typescript-vim'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -44,10 +44,8 @@ if (has("termguicolors"))
 endif
 
 syntax enable
-colorscheme gruvbox
-set background=dark
-let g:gruvbox_contrast_dark='soft'
-let g:airline_theme='gruvbox'
+colorscheme OceanicNext
+let g:airline_theme='oceanicnext'
 let g:airline_powerline_fonts = 1
 let g:jsx_ext_required = 0
 let g:deoplete#enable_at_startup = 1
