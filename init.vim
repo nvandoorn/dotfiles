@@ -11,19 +11,16 @@ endfunction
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'mhartington/oceanic-next'
-Plug 'joshdick/onedark.vim'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'}
-Plug 'mxw/vim-jsx'
-Plug 'jiangmiao/auto-pairs'
-Plug 'neomake/neomake'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'othree/yajs.vim'
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
-Plug 'leafgarland/typescript-vim'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'akz92/vim-ionic2'
+Plug 'leafgarland/typescript-vim'
+Plug 'wellle/targets.vim'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-unimpaired'
+
 
 call plug#end()
 
