@@ -16,11 +16,14 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'leafgarland/typescript-vim'
+Plug 'mhartington/nvim-typescript'
 Plug 'wellle/targets.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
-
+Plug 'Shougo/deoplete.nvim'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'sbdchd/neoformat'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
@@ -32,7 +35,7 @@ set ai
 set number
 set relativenumber
 set mouse=a
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/platforms/*,*/plugins/*,*/coverage/*,*/.nyc_output/*,*/mangoh-src/*,*/_build**,*/legato/*
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/platforms/*,*/plugins/*,*/coverage/*,*/.nyc_output/*,*/mangoh-src/*,*/_build**,*/legato/*,*/build/*
 nnoremap ; :
 nnoremap : ;
 
@@ -48,6 +51,10 @@ let g:jsx_ext_required = 0
 let g:deoplete#enable_at_startup = 1
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * undojoin | Neoformat
+augroup END
 
 set spelllang=en
 au BufRead *.md setlocal spell
