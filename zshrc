@@ -100,8 +100,10 @@ export TTC_APIKEYS=false
 
 alias vi=nvim
 alias gs='git status'
+alias gsh='git status ./'
 alias gdc='git diff --cached'
-alias gd='git diff'
+alias gdch='git diff --cached ./'
+alias gdh='git diff ./'
 alias gac='git add-commit'
 alias ga='git add'
 alias gc='git commit'
