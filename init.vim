@@ -10,6 +10,8 @@ endfunction
 
 call plug#begin('~/.local/share/nvim/plugged')
 
+Plug 'zefei/vim-wintabs'
+Plug 'zefei/vim-wintabs-powerline'
 Plug 'mhartington/oceanic-next'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
@@ -42,6 +44,16 @@ nnoremap : ;
 if (has("termguicolors"))
  set termguicolors
 endif
+
+map <C-H> <Plug>(wintabs_previous)
+map <C-L> <Plug>(wintabs_next)
+map <C-T>c <Plug>(wintabs_close)
+map <C-T>u <Plug>(wintabs_undo)
+map <C-T>o <Plug>(wintabs_only)
+map <C-W>c <Plug>(wintabs_close_window)
+map <C-W>o <Plug>(wintabs_only_window)
+command! Tabc WintabsCloseVimtab
+command! Tabo WintabsOnlyVimtab
 
 syntax enable
 colorscheme OceanicNext
