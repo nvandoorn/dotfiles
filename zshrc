@@ -7,8 +7,10 @@ export ZSH=~/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 DEFAULT_USER="nick"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir newline node_version vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -52,7 +54,7 @@ DEFAULT_USER="nick"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git async)
+plugins=(git async node)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -123,6 +125,7 @@ alias cdbfunc='cd ~/Documents/BRNKL-functions'
 alias cdbmang='cd ~/Documents/BRNKL-base'
 alias cdbwiki='cd ~/Documents/BRNKL-functions.wiki'
 alias sshubuntu='ssh nick@172.16.24.128'
+alias sshbuild='ssh build@10.0.1.238'
 alias cfglegato cfglegato='pushd . && cd ~/Documents/BRNKL-base/legato && source ./bin/configlegatoenv ; popd'
 
 if [[ `uname` == 'Linux' ]]; then

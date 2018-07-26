@@ -12,13 +12,13 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'zefei/vim-wintabs'
 Plug 'zefei/vim-wintabs-powerline'
-Plug 'mhartington/oceanic-next'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'mhartington/nvim-typescript'
+Plug 'mhartington/oceanic-next'
+Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
 Plug 'wellle/targets.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
@@ -71,3 +71,5 @@ augroup END
 set spelllang=en
 au BufRead *.md setlocal spell
 au BufRead *.markdown setlocal spell
+
+let g:node_host_prog = '/Users/nick/.nvm/versions/node/v8.11.1/lib/node_modules/neovim/bin/cli.js'
