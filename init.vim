@@ -10,8 +10,6 @@ endfunction
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'zefei/vim-wintabs'
-Plug 'zefei/vim-wintabs-powerline'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -45,16 +43,6 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
-map <C-H> <Plug>(wintabs_previous)
-map <C-L> <Plug>(wintabs_next)
-map <C-T>c <Plug>(wintabs_close)
-map <C-T>u <Plug>(wintabs_undo)
-map <C-T>o <Plug>(wintabs_only)
-map <C-W>c <Plug>(wintabs_close_window)
-map <C-W>o <Plug>(wintabs_only_window)
-command! Tabc WintabsCloseVimtab
-command! Tabo WintabsOnlyVimtab
-
 syntax enable
 colorscheme OceanicNext
 let g:airline_theme='oceanicnext'
@@ -72,4 +60,4 @@ set spelllang=en
 au BufRead *.md setlocal spell
 au BufRead *.markdown setlocal spell
 
-let g:node_host_prog = '/Users/nick/.nvm/versions/node/v8.11.1/lib/node_modules/neovim/bin/cli.js'
+let g:node_host_prog = '/Users/nick/.nvm/versions/node/v8.11.3/lib/node_modules/neovim/bin/cli.js'
