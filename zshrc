@@ -93,7 +93,7 @@ export VISUAL=nvim
 export EDITOR="$VISUAL"
 export PATH="$PATH:/Users/nick/Documents/google-cloud-sdk/bin"
 
-export TTC_REPOS='~/Documents/slask,~/Documents/portfolio,~/Documents/dotfiles,~/Documents/getslask.com,~/Documents/webpack2-react-starter,~/Documents/BRNKL-app,~/Documents/BRNKL-IoT-Server,~/Documents/BRNKL-rest-api'
+export TTC_REPOS='~/Documents/dotfiles,~/Documents/BRNKL-app,~/Documents/BRNKL-functions,~/Documents/BRNKL-base,~/Documents/BRNKL-hardware-tests'
 export TTC_REPOS_DEPTH=2
 export TTC_GITBOT='gitlog'
 export TTC_WEATHER='Victoria, BC'
