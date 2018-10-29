@@ -127,3 +127,5 @@ alias cdbmang='cd ~/Documents/BRNKL-base'
 alias cdbwiki='cd ~/Documents/BRNKL-functions.wiki'
 alias sshubuntu='ssh nick@172.16.24.128'
 alias sshbuild='ssh build@10.0.1.238'
+
+if [ "$TMUX" = "" ]; then tmux; fi
