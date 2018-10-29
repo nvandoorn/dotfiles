@@ -99,6 +99,7 @@ export TTC_GITBOT='gitlog'
 export TTC_WEATHER='Victoria, BC'
 export TTC_SAY_BOX='parrot'
 export TTC_APIKEYS=false
+export TERM="screen-256color"
 
 alias vi=nvim
 alias gs='git status'
@@ -126,8 +127,3 @@ alias cdbmang='cd ~/Documents/BRNKL-base'
 alias cdbwiki='cd ~/Documents/BRNKL-functions.wiki'
 alias sshubuntu='ssh nick@172.16.24.128'
 alias sshbuild='ssh build@10.0.1.238'
-alias cfglegato cfglegato='pushd . && cd ~/Documents/BRNKL-base/legato && source ./bin/configlegatoenv ; popd'
-
-if [[ `uname` == 'Linux' ]]; then
-  cfglegato
-fi
