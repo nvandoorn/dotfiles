@@ -59,5 +59,3 @@ augroup END
 set spelllang=en
 au BufRead *.md setlocal spell
 au BufRead *.markdown setlocal spell
-
-let g:node_host_prog = '/Users/nick/.nvm/versions/node/v8.11.3/lib/node_modules/neovim/bin/cli.js'
