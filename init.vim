@@ -28,6 +28,8 @@ Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 set tabstop=2
+set foldmethod=syntax
+set foldlevelstart=99
 set expandtab
 set shiftwidth=2
 set softtabstop=2
