@@ -123,9 +123,10 @@ alias cddotfiles='cd ~/Documents/dotfiles'
 
 alias cdbapp='cd ~/Documents/BRNKL-app'
 alias cdbfunc='cd ~/Documents/BRNKL-functions'
-alias cdbmang='cd ~/Documents/BRNKL-base'
-alias cdbwiki='cd ~/Documents/BRNKL-functions.wiki'
-alias sshubuntu='ssh nick@172.16.24.128'
-alias sshbuild='ssh build@10.0.1.238'
+alias cdbbase='cd ~/Documents/BRNKL-base'
+alias cdbtest='cd ~/Documents/BRNKL-hardware-tests'
 
-if [ "$TMUX" = "" ]; then tmux; fi
+if [ "$TMUX" = "" ]; then
+  export PATH="$PATH:/Users/nick/Documents/BRNKL-base/legato/bin"
+  tmux;
+fi
