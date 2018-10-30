@@ -91,7 +91,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export VISUAL=nvim
 export EDITOR="$VISUAL"
-export PATH="$PATH:/Users/nick/Documents/google-cloud-sdk/bin"
 
 export TTC_REPOS='~/Documents/dotfiles,~/Documents/BRNKL-app,~/Documents/BRNKL-functions,~/Documents/BRNKL-base,~/Documents/BRNKL-hardware-tests'
 export TTC_REPOS_DEPTH=2
