@@ -51,6 +51,7 @@ let g:airline_theme='oceanicnext'
 let g:airline_powerline_fonts = 1
 let g:jsx_ext_required = 0
 let g:deoplete#enable_at_startup = 1
+let g:ctrlp_working_path_mode = 'rw'
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 augroup fmt
