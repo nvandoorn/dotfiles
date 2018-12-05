@@ -92,7 +92,7 @@ export NVM_DIR="$HOME/.nvm"
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
-export TTC_REPOS='~/Documents/dotfiles,~/Documents/BRNKL-app,~/Documents/BRNKL-functions,~/Documents/BRNKL-base,~/Documents/BRNKL-hardware-tests'
+# export TTC_REPOS='~/Documents/dotfiles,~/Documents/BRNKL-app,~/Documents/BRNKL-functions,~/Documents/BRNKL-base,~/Documents/BRNKL-hardware-tests'
 export TTC_REPOS_DEPTH=2
 export TTC_GITBOT='gitlog'
 export TTC_WEATHER='Victoria, BC'
@@ -110,10 +110,12 @@ alias gac='git add-commit'
 alias ga='git add'
 alias gc='git commit'
 alias gpo='git push origin'
+alias gp='git push'
 alias gr='git reset'
 alias grh='git reset --hard'
 alias gb='git branch'
 alias gch='git checkout'
+alias grf='git checkout --'
 
 alias cdrio='cd ~/Documents/rio/'
 alias cdslask='cd ~/Documents/slask'
@@ -124,6 +126,8 @@ alias cdbapp='cd ~/Documents/BRNKL-app'
 alias cdbfunc='cd ~/Documents/BRNKL-functions'
 alias cdbbase='cd ~/Documents/BRNKL-base'
 alias cdbtest='cd ~/Documents/BRNKL-hardware-tests'
+
+alias sshubuntu='ssh nick@192.168.121.128'
 
 if [ "$TMUX" = "" ]; then
   export PATH="$PATH:/Users/nick/Documents/BRNKL-base/legato/bin"
