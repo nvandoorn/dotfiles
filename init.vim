@@ -16,6 +16,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mhartington/oceanic-next'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
 Plug 'wellle/targets.vim'
 Plug 'tpope/vim-commentary'
@@ -43,7 +44,7 @@ set ai
 set number
 set relativenumber
 set mouse=a
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/platforms/*,*/plugins/*,*/coverage/*,*/.nyc_output/*,*/mangoh-src/*,*/_build**,*/legato/*,*/build/*,*/.cache/*,*/public/*
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/platforms/*,*/plugins/*,*/coverage/*,*/.nyc_output/*,*/mangoh-src/*,*/_build**,*/legato/*,*/build/*,*/.cache/*,*/public/*,*/dist/*
 nnoremap ; :
 nnoremap : ;
 
@@ -52,8 +53,8 @@ if (has("termguicolors"))
 endif
 
 syntax enable
-colorscheme OceanicNext
-let g:airline_theme='oceanicnext'
+colorscheme PaperColor
+let g:airline_theme='papercolor'
 let g:airline_powerline_fonts = 1
 let g:jsx_ext_required = 0
 let g:deoplete#enable_at_startup = 1
