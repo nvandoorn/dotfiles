@@ -119,9 +119,6 @@ alias gb='git branch'
 alias gch='git checkout'
 alias grf='git checkout --'
 
-alias cdrio='cd ~/Documents/rio/'
-alias cdslask='cd ~/Documents/slask'
-alias cdport='cd ~/Documents/portfolio'
 alias cddotfiles='cd ~/Documents/dotfiles'
 
 alias cdbapp='cd ~/Documents/BRNKL-app'
@@ -132,6 +129,5 @@ alias cdbtest='cd ~/Documents/BRNKL-hardware-tests'
 alias sshubuntu='ssh nick@192.168.121.128'
 
 if [ "$TMUX" = "" ]; then
-  export PATH="$PATH:/Users/nick/Documents/BRNKL-base/legato/bin"
   tmux;
 fi
