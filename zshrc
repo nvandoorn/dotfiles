@@ -127,6 +127,7 @@ alias cdbbase='cd ~/Documents/BRNKL-base'
 alias cdbtest='cd ~/Documents/BRNKL-hardware-tests'
 
 alias sshubuntu='ssh nick@192.168.121.128'
+alias cfglegato='pushd; cd ~/Documents/BRNKL-base/legato/; source bin/configlegatoenv; popd'
 
 if [ "$TMUX" = "" ]; then
   tmux;
