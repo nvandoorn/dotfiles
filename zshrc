@@ -9,8 +9,9 @@ export ZSH=~/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
 DEFAULT_USER="nick"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir newline node_version vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir node_version vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
