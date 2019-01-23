@@ -102,6 +102,7 @@ export TTC_APIKEYS=false
 export TERM="screen-256color"
 
 alias vi=nvim
+alias cat=ccat
 alias gs='git status'
 alias gsh='git status ./'
 alias gdc='git diff --cached'
