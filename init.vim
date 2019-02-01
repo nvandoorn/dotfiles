@@ -22,8 +22,8 @@ Plug 'wellle/targets.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
 Plug 'Shougo/deoplete.nvim'
-Plug 'HerringtonDarkholme/yats.vim'
 Plug 'sbdchd/neoformat'
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'chrisbra/Colorizer'
 Plug 'tpope/vim-fugitive'
@@ -45,6 +45,10 @@ set number
 set relativenumber
 set mouse=a
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/platforms/*,*/plugins/*,*/coverage/*,*/.nyc_output/*,*/mangoh-src/*,*/_build**,*/legato/*,*/build/*,*/.cache/*,*/public/*,*/dist/*
+nmap <C-u> [e
+nmap <C-d> ]e
+vmap <C-u> [egv
+vmap <C-d> ]egv
 nnoremap ; :
 nnoremap : ;
 
@@ -53,8 +57,8 @@ if (has("termguicolors"))
 endif
 
 syntax enable
-colorscheme PaperColor
-let g:airline_theme='papercolor'
+colorscheme OceanicNext
+let g:airline_theme='oceanicnext'
 let g:airline_powerline_fonts = 1
 let g:jsx_ext_required = 0
 let g:deoplete#enable_at_startup = 1
