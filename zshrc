@@ -7,11 +7,7 @@ export ZSH=~/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
 DEFAULT_USER="nick"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir node_version vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -57,6 +53,7 @@ POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git async node)
 
+export ZSH_THEME='sunrise'
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -93,7 +90,10 @@ export NVM_DIR="$HOME/.nvm"
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
-# export TTC_REPOS='~/Documents/dotfiles,~/Documents/BRNKL-app,~/Documents/BRNKL-functions,~/Documents/BRNKL-base,~/Documents/BRNKL-hardware-tests'
+export VIM_THEME='OceanicNext'
+export VIM_AIRLINE_THEME='oceanicnext'
+
+export TTC_REPOS=''
 export TTC_REPOS_DEPTH=2
 export TTC_GITBOT='gitlog'
 export TTC_WEATHER='Victoria, BC'
@@ -103,6 +103,7 @@ export TERM="screen-256color"
 
 alias vi=nvim
 alias cat=ccat
+alias ls='lsd -l'
 alias gs='git status'
 alias gsh='git status ./'
 alias gdc='git diff --cached'
@@ -121,14 +122,8 @@ alias grf='git checkout --'
 
 alias cddotfiles='cd ~/Documents/dotfiles'
 
-alias cdbapp='cd ~/Documents/BRNKL-app'
-alias cdbfunc='cd ~/Documents/BRNKL-functions'
-alias cdbbase='cd ~/Documents/BRNKL-base'
-alias cdbtest='cd ~/Documents/BRNKL-hardware-tests'
-
-alias sshubuntu='ssh nick@192.168.121.128'
-alias cfglegato='pushd; cd ~/Documents/BRNKL-base/legato/; source bin/configlegatoenv; popd'
-
 if [ "$TMUX" = "" ]; then
   tmux;
 fi
+
+it2prof() { echo -e "\033]50;SetProfile=$1\a"; export ITERM_PROFILE=$1 }
