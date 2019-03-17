@@ -10,13 +10,18 @@ endfunction
 
 call plug#begin('~/.local/share/nvim/plugged')
 
+" Pick a theme, any theme, really
+Plug 'mhartington/oceanic-next'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'danilo-augusto/vim-afterglow'
+Plug 'altercation/vim-colors-solarized'
+Plug 'flazz/vim-colorschemes'
+
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'mhartington/oceanic-next'
-Plug 'NLKNguyen/papercolor-theme'
 Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
 Plug 'wellle/targets.vim'
 Plug 'tpope/vim-commentary'
@@ -44,7 +49,7 @@ set ai
 set number
 set relativenumber
 set mouse=a
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/platforms/*,*/plugins/*,*/coverage/*,*/.nyc_output/*,*/mangoh-src/*,*/_build**,*/legato/*,*/build/*,*/.cache/*,*/public/*,*/dist/*
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/platforms/*,*/plugins/*,*/coverage/*,*/.nyc_output/*,*/build/*,*/.cache/*,*/public/*,*/dist/*
 nmap <C-u> [e
 nmap <C-d> ]e
 vmap <C-u> [egv
@@ -57,8 +62,8 @@ if (has("termguicolors"))
 endif
 
 syntax enable
-colorscheme OceanicNext
-let g:airline_theme='oceanicnext'
+colorscheme $VIM_THEME
+let g:airline_theme=$VIM_AIRLINE_THEME
 let g:airline_powerline_fonts = 1
 let g:jsx_ext_required = 0
 let g:deoplete#enable_at_startup = 1
