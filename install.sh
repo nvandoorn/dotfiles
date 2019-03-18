@@ -2,15 +2,11 @@
 brew install git nvim zsh
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-# vim plugin manage
+# vim plugin manager
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-# oh-my-zsh theme
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 # link it all together
 ln -s "$PWD/zshrc" ~/.zshrc
 ln -s "$PWD/init.vim" ~/.config/nvim/init.vim
 ln -s "$PWD/gitconfig" ~/.gitconfig
 ln -s "$PWD/tmux.conf" ~/.tmux.conf
-ln -s "$PWD/kitty.conf" ~/.config/kitty/kitty.conf
-
