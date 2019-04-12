@@ -17,25 +17,31 @@ Plug 'danilo-augusto/vim-afterglow'
 Plug 'altercation/vim-colors-solarized'
 Plug 'flazz/vim-colorschemes'
 
-Plug 'scrooloose/nerdtree'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+
+" Syntax support
+Plug 'mhartington/nvim-typescript', {'for': ['typescript', 'tsx'], 'do': 'sh ./install.sh' }
+Plug 'leafgarland/typescript-vim', { 'for': ['typescript', 'tsx'] }
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
+Plug 'jxnblk/vim-mdx-js'
+
+" Extensions
 Plug 'wellle/targets.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
 Plug 'Shougo/deoplete.nvim'
 Plug 'sbdchd/neoformat'
-Plug 'HerringtonDarkholme/yats.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'chrisbra/Colorizer'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'mxw/vim-jsx'
-Plug 'pangloss/vim-javascript'
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
 
@@ -62,6 +68,7 @@ if (has("termguicolors"))
 endif
 
 syntax enable
+set background=light
 colorscheme $VIM_THEME
 let g:airline_theme=$VIM_AIRLINE_THEME
 let g:airline_powerline_fonts = 1
@@ -70,10 +77,13 @@ let g:deoplete#enable_at_startup = 1
 let g:ctrlp_working_path_mode = 'rw'
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 augroup fmt
   autocmd!
   autocmd BufWritePre * undojoin | Neoformat
 augroup END
+
+
 
 set spelllang=en
 au BufRead *.md setlocal spell
