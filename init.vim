@@ -27,6 +27,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 Plug 'jxnblk/vim-mdx-js'
+Plug 'elixir-editors/vim-elixir'
 
 " Extensions
 Plug 'wellle/targets.vim'
