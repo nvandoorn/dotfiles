@@ -84,6 +84,11 @@ augroup fmt
   autocmd BufWritePre * undojoin | Neoformat
 augroup END
 
+augroup jbuilder
+  au!
+  autocmd BufNewFile,BufRead *.jbuilder   set syntax=ruby
+augroup END
+
 
 
 set spelllang=en
