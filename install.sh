@@ -1,5 +1,14 @@
+# brew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # Install what we can with brew
-brew install git nvim zsh
+brew install git nvim zsh chruby ruby-install
+# nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+# use the latest
+ruby-install --latest
+nvm install --lts
+mkdir $HOME/.bin
+wget https://raw.githubusercontent.com/samphippen/rubyfmt/master/src/rubyfmt.rb -P $HOME/.bin
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # vim plugin manager
