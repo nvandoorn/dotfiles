@@ -15,7 +15,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 # link it all together
-ln -s "$PWD/zshrc" ~/.zshrc
-ln -s "$PWD/init.vim" ~/.config/nvim/init.vim
-ln -s "$PWD/gitconfig" ~/.gitconfig
-ln -s "$PWD/tmux.conf" ~/.tmux.conf
+ln -s "$PWD/zshrc" $HOME/.zshrc
+ln -s "$PWD/init.vim" $HOME/.config/nvim/init.vim
+ln -s "$PWD/gitconfig" $HOME/.gitconfig
+ln -s "$PWD/tmux.conf" $HOME/.tmux.conf
