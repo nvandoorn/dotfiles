@@ -9,6 +9,7 @@ ruby-install --latest
 nvm install --lts
 mkdir $HOME/.bin
 wget https://raw.githubusercontent.com/samphippen/rubyfmt/master/src/rubyfmt.rb -P $HOME/.bin
+wget https://raw.githubusercontent.com/nvandoorn/versions-are-important/master/check-version.zsh -P $HOME/.bin
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # vim plugin manager
