@@ -81,14 +81,14 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 augroup fmt
   autocmd!
-  autocmd BufWritePre * undojoin | Neoformat
+  autocmd BufWritePre *.js undojoin | Neoformat javascript prettier
+  autocmd BufWritePre *.ts undojoin | Neoformat typescript prettier
 augroup END
 
 augroup jbuilder
   au!
-  autocmd BufNewFile,BufRead *.jbuilder   set syntax=ruby
+  autocmd BufNewFile,BufRead *.jbuilder set syntax=ruby
 augroup END
-
 
 
 set spelllang=en
