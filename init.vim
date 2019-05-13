@@ -63,6 +63,8 @@ vmap <C-u> [egv
 vmap <C-d> ]egv
 nnoremap ; :
 nnoremap : ;
+nnoremap : :NERDTreeToggle<CR>
+
 
 if (has("termguicolors"))
  set termguicolors
