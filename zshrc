@@ -5,11 +5,13 @@ plugins=(git async node ruby rails)
 source $ZSH/oh-my-zsh.sh
 
 # package/version managers
+export DEFAULT_RUBY_VERSION="2.6.3"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 source /usr/local/share/chruby/chruby.sh
 source $HOME/.bin/check-version.zsh
 export PATH="$HOME/.cargo/bin:$PATH"
+chruby $DEFAULT_RUBY_VERSION
 
 # editor/term settings
 export VISUAL=nvim
