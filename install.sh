@@ -19,4 +19,4 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 ln -s "$PWD/zshrc" $HOME/.zshrc
 ln -s "$PWD/init.vim" $HOME/.config/nvim/init.vim
 ln -s "$PWD/gitconfig" $HOME/.gitconfig
-ln -s "$PWD/tmux.conf" $HOME/.tmux.conf
+ln -s "$PWD/gitignore_global" $HOME/.gitignore_global
