@@ -61,7 +61,7 @@ fi
 
 # backup helper function
 backup() {
-  rsync -rua --info=progress2 --exclude-from="$PWD/Documents/dotfiles/rsync-ignore.txt" ~/Documents /Volumes/nick/backups
+  rsync -rua --info=progress2 --exclude-from="$HOME/Documents/dotfiles/rsync-ignore.txt" $HOME/Documents /Volumes/nick/backups
 }
 
 function chpwd() {
