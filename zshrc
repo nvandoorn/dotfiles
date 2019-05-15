@@ -65,5 +65,5 @@ backup() {
 }
 
 function chpwd() {
-  checkVersions
+  # checkVersions
 }
