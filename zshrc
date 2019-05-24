@@ -73,3 +73,13 @@ backup() {
 function chpwd() {
   # checkVersions
 }
+
+function dbup() {
+  pg_ctl -D /usr/local/var/postgres start
+  redis-server /usr/local/etc/redis.conf --daemonize yes
+}
+
+# TODO stop redis
+function dbdown() {
+  pg_ctl -D /usr/local/var/postgres stop
+}
