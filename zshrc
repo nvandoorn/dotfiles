@@ -36,6 +36,7 @@ export TTC_APIKEYS=false
 # command alias
 alias vi=nvim
 alias cat=ccat
+alias bue='bundle exec'
 alias ls='lsd -l'
 alias gs='git status'
 alias gsh='git status ./'
