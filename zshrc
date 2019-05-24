@@ -66,7 +66,7 @@ if [ "$TMUX" = "" ]; then
 fi
 
 # backup helper function
-backup() {
+function backup() {
   rsync -rua --info=progress2 --exclude-from="$HOME/Documents/dotfiles/rsync-ignore.txt" $HOME/Documents /Volumes/nick/backups
 }
 
