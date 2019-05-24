@@ -55,7 +55,10 @@ alias gch='git checkout'
 alias grf='git checkout --'
 
 # folder alias
-alias cddotfiles='cd ~/Documents/dotfiles'
+alias cddotfiles='cd $HOME/Documents/dotfiles'
+alias cdpeachy='cd $HOME/Documents/peachy'
+alias cdball='cd $HOME/Documents/SmartBallot'
+alias cdballj='cd $HOME/Documents/smart-ballot-journal'
 
 # avoid nesting tmux sessions
 if [ "$TMUX" = "" ]; then
