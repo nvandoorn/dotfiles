@@ -1,7 +1,7 @@
 # brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # Install what we can with brew
-brew install git nvim zsh chruby ruby-install redis postgres
+brew install git nvim zsh chruby ruby-install redis postgres fzf
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 # use the latest
