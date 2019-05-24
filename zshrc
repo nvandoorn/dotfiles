@@ -11,7 +11,9 @@ export NVM_DIR="$HOME/.nvm"
 source /usr/local/share/chruby/chruby.sh
 source $HOME/.bin/check-version.zsh
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.bin:$PATH"
 chruby $DEFAULT_RUBY_VERSION
+
 
 # editor/term settings
 export VISUAL=nvim
