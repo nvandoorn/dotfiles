@@ -83,3 +83,14 @@ function dbup() {
 function dbdown() {
   pg_ctl -D /usr/local/var/postgres stop
 }
+
+# TODO use a "trap" here so ctl + c
+# kills rails and webpack-dev-server with one go
+function railsdev() {
+  bin/rails server &
+  bin/webpack-dev-server
+  # bring rails server back to the foreground
+  # after webpack-dev-server gets killed
+  # so it too can be killed
+  fg
+}
