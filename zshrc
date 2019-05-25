@@ -94,3 +94,7 @@ function railsdev() {
   # so it too can be killed
   fg
 }
+
+function diebitch() {
+  kill $(lsof -i :$1 -t)
+}
