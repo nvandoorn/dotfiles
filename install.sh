@@ -10,6 +10,9 @@ nvm install --lts
 mkdir $HOME/.bin
 wget https://raw.githubusercontent.com/samphippen/rubyfmt/master/src/rubyfmt.rb -P $HOME/.bin
 wget https://raw.githubusercontent.com/nvandoorn/versions-are-important/master/check-version.zsh -P $HOME/.bin
+wget https://chromedriver.storage.googleapis.com/74.0.3729.6/chromedriver_mac64.zip -P $HOME/.bin
+unzip $HOME/.bin/chromedriver_mac64.zip
+rm $HOME/.bin/chromedriver_mac64.zip
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # vim plugin manager
