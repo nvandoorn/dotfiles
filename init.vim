@@ -85,11 +85,11 @@ let g:ctrlp_working_path_mode = 'rw'
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-augroup fmt
-  autocmd!
-  autocmd BufWritePre *.js undojoin | Neoformat javascript prettier
-  autocmd BufWritePre *.ts undojoin | Neoformat typescript prettier
-augroup END
+" augroup fmt
+"   autocmd!
+"   autocmd BufWritePre *.js undojoin | Neoformat javascript prettier
+"   autocmd BufWritePre *.ts undojoin | Neoformat typescript prettier
+" augroup END
 
 augroup jbuilder
   au!
