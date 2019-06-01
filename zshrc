@@ -56,6 +56,7 @@ alias gb='git branch'
 alias gch='git checkout'
 alias grf='git checkout --'
 alias gnu='git checkout -b'
+alias charp='git add -p'
 
 # folder alias
 alias cddotfiles='cd $HOME/Documents/dotfiles'
