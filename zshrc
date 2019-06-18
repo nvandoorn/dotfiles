@@ -3,6 +3,10 @@ export ZSH=~/.oh-my-zsh
 DEFAULT_USER="nick"
 plugins=(git async node ruby rails)
 source $ZSH/oh-my-zsh.sh
+export DOTFILES_PATH="$HOME/Documents/dotfiles"
+
+# git alias/functions
+source $DOTFILES_PATH/git.zsh
 
 # package/version managers
 export DEFAULT_RUBY_VERSION="2.6.3"
@@ -37,26 +41,7 @@ export TTC_APIKEYS=false
 alias vi=nvim
 alias cat=ccat
 alias bue='bundle exec'
-alias ls='lsd -l'
-alias gs='git status'
-alias gsh='git status ./'
-alias gdc='git diff --cached'
-alias gdch='git diff --cached ./'
-alias gdh='git diff ./'
-alias gac='git add-commit'
-alias ga='git add'
-alias gc='git commit'
-alias gpo='git push origin'
-alias gpu='git pull'
-alias gpuo='git pull origin master'
-alias gp='git push'
-alias gr='git reset'
-alias grh='git reset --hard'
-alias gb='git branch'
-alias gch='git checkout'
-alias grf='git checkout --'
-alias gnu='git checkout -b'
-alias charp='git add -p'
+alias ls='lsd'
 
 # folder alias
 alias cddotfiles='cd $HOME/Documents/dotfiles'
@@ -71,7 +56,7 @@ fi
 
 # backup helper function
 function backup() {
-  rsync -rua --info=progress2 --exclude-from="$HOME/Documents/dotfiles/rsync-ignore.txt" $HOME/Documents /Volumes/nick/backups
+  rsync -rua --info=progress2 --exclude-from="$DOTFILES_PATH/rsync-ignore.txt" $HOME/Documents /Volumes/nick/backups
 }
 
 function chpwd() {
@@ -101,4 +86,8 @@ function railsdev() {
 
 function diebitch() {
   kill $(lsof -i :$1 -t)
+}
+
+function togif() {
+  ffmpeg -i $1 -s 600x400 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=$2 --delay=3 > out.gif
 }
