@@ -16,6 +16,8 @@ alias gb='git branch'
 alias gch='git checkout'
 alias grf='git checkout --'
 alias gnu='git checkout -b'
+alias grb='git rebase'
+alias grbi='git rebase -i'
 alias patchy='git add -p'
 
 function active_branch () {
