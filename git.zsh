@@ -25,6 +25,12 @@ alias poppy='stash pop'
 alias gcat='gc --amend'
 alias dirty_rebase='stash && grbi && poppy'
 
+# function gcm () {
+#   MSG="'$*'"
+#   echo $MSG
+#   git commit -m $MSG
+# }
+
 function active_branch () {
   git rev-parse --abbrev-ref HEAD
 }
