@@ -43,6 +43,7 @@ alias vil='VIM_THEME=PaperColor vi'
 alias cat=ccat
 alias bue='bundle exec'
 alias ls='lsd'
+alias leaky="pkill -9 -f 'rb-fsevent|rails|puma'"
 
 # folder alias
 alias cddotfiles='cd $HOME/Documents/dotfiles'
