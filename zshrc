@@ -39,6 +39,7 @@ export TTC_APIKEYS=false
 
 # command alias
 alias vi=nvim
+alias vil='VIM_THEME=PaperColor vi'
 alias cat=ccat
 alias bue='bundle exec'
 alias ls='lsd'
