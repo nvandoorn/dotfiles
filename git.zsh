@@ -19,6 +19,9 @@ alias gnu='git checkout -b'
 alias grb='git rebase'
 alias grbi='git rebase -i HEAD~12'
 alias patchy='git add -p'
+alias stash='git stash'
+alias poppy='stash pop'
+alias dirty_rebase='stash && grbi && poppy'
 
 function active_branch () {
   git rev-parse --abbrev-ref HEAD
