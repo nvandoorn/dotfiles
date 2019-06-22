@@ -8,18 +8,17 @@ function! BuildComposer(info)
   endif
 endfunction
 
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin('~/.vim/plugged')
+
 
 " Pick a theme, any theme, really
-Plug 'mhartington/oceanic-next'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'danilo-augusto/vim-afterglow'
 Plug 'altercation/vim-colors-solarized'
 Plug 'flazz/vim-colorschemes'
-
+Plug 'morhetz/gruvbox'
 
 " Syntax support
-Plug 'mhartington/nvim-typescript', {'for': ['typescript', 'tsx'], 'do': 'sh ./install.sh' }
 Plug 'leafgarland/typescript-vim', { 'for': ['typescript', 'tsx'] }
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'mxw/vim-jsx'
@@ -35,13 +34,12 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-rails'
-Plug 'Shougo/deoplete.nvim'
 Plug 'sbdchd/neoformat'
 Plug 'jiangmiao/auto-pairs'
 Plug 'chrisbra/Colorizer'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'scrooloose/nerdtree'
+Plug 'francoiscabrol/ranger.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -67,23 +65,18 @@ vmap <C-u> [egv
 vmap <C-d> ]egv
 nnoremap ; :
 nnoremap : ;
-nnoremap : :NERDTreeToggle<CR>
+nnoremap : :Ranger<CR>
 
 
-if (has("termguicolors"))
- set termguicolors
-endif
+syntax on
 
-syntax enable
-set background=light
-colorscheme $VIM_THEME
-let g:airline_theme=$VIM_AIRLINE_THEME
+" colorscheme $VIM_THEME
+colorscheme gruvbox
+let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
 let g:jsx_ext_required = 0
 let g:deoplete#enable_at_startup = 1
 let g:ctrlp_working_path_mode = 'rw'
-
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " augroup fmt
 "   autocmd!
