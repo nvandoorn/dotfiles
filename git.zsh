@@ -1,5 +1,6 @@
 alias gs='git status'
 alias gsh='git status ./'
+alias gd='git diff'
 alias gdc='git diff --cached'
 alias gdch='git diff --cached ./'
 alias gdh='git diff ./'
