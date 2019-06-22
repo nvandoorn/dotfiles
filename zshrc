@@ -16,7 +16,8 @@ chruby $DEFAULT_RUBY_VERSION
 
 
 # editor/term settings
-export VISUAL=nvim
+alias vi=vim
+export VISUAL=vim
 export EDITOR="$VISUAL"
 export TERM="screen-256color"
 
@@ -33,7 +34,6 @@ export TTC_SAY_BOX='parrot'
 export TTC_APIKEYS=false
 
 # command alias
-alias vi=nvim
 alias vil='VIM_THEME=PaperColor vi'
 alias cat=ccat
 alias bue='bundle exec'
