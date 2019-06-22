@@ -1,8 +1,4 @@
 # oh-my-zsh
-export ZSH=~/.oh-my-zsh
-DEFAULT_USER="nick"
-plugins=(git async node ruby rails)
-source $ZSH/oh-my-zsh.sh
 export DOTFILES_PATH="$HOME/Documents/dotfiles"
 
 # git alias/functions
@@ -25,7 +21,6 @@ export EDITOR="$VISUAL"
 export TERM="screen-256color"
 
 # theme env vars
-export ZSH_THEME='sunrise'
 export VIM_THEME='OceanicNext'
 export VIM_AIRLINE_THEME='oceanicnext'
 
@@ -93,3 +88,6 @@ function diebitch() {
 function togif() {
   ffmpeg -i $1 -s 600x400 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=$2 --delay=3 > out.gif
 }
+
+autoload -U promptinit; promptinit
+prompt pure
