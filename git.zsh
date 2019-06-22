@@ -26,6 +26,10 @@ alias poppy='stash pop'
 alias gcat='gc --amend'
 alias dirty_rebase='stash && grbi && poppy'
 
+function quick_fix () {
+  stash && gch master && gnu $1 && poppy
+}
+
 # function gcm () {
 #   MSG="'$*'"
 #   echo $MSG
