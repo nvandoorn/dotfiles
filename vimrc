@@ -69,6 +69,7 @@ nnoremap : :Ranger<CR>
 
 
 syntax on
+set bs=2
 
 " colorscheme $VIM_THEME
 colorscheme gruvbox
