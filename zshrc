@@ -1,4 +1,6 @@
 export DOTFILES_PATH="$HOME/Documents/dotfiles"
+export KEYTIMEOUT=1
+
 export ZSH=~/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
