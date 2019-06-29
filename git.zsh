@@ -77,3 +77,10 @@ function push_each () {
   done < $STACK_CACHE_FILE
   git checkout master
 }
+
+function delete_each () {
+  while read in
+  do
+    git branch -D $in
+  done < $STACK_CACHE_FILE
+}
