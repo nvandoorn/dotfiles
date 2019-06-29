@@ -1,5 +1,6 @@
-# oh-my-zsh
 export DOTFILES_PATH="$HOME/Documents/dotfiles"
+export ZSH=~/.oh-my-zsh
+source $ZSH/oh-my-zsh.sh
 
 # git alias/functions
 source $DOTFILES_PATH/git.zsh
