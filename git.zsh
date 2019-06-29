@@ -30,12 +30,6 @@ function quick_fix () {
   stash && gch master && gnu $1 && poppy
 }
 
-# function gcm () {
-#   MSG="'$*'"
-#   echo $MSG
-#   git commit -m $MSG
-# }
-
 function active_branch () {
   git rev-parse --abbrev-ref HEAD
 }
