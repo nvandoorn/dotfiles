@@ -18,7 +18,7 @@
 [color]
   ui = auto
 [credential]
-  helper = cache
+  helper = store
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
