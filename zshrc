@@ -25,8 +25,8 @@ export EDITOR="$VISUAL"
 export TERM="screen-256color"
 
 # theme env vars
-export VIM_THEME='OceanicNext'
-export VIM_AIRLINE_THEME='oceanicnext'
+export VIM_THEME='gruvbox'
+export VIM_AIRLINE_THEME='gruvbox'
 
 # tiny-care-terminal
 export TTC_REPOS=''
