@@ -26,13 +26,25 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 Plug 'jxnblk/vim-mdx-js'
 Plug 'elixir-editors/vim-elixir'
+Plug 'elzr/vim-json'
 
 " Extensions
+" Chuch of tpope
 Plug 'wellle/targets.vim'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-ragtag'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-rails'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
+
+Plug 'ConradIrwin/vim-bracketed-paste'
+Plug 'ervandew/supertab'
+Plug 'vim-ruby/vim-ruby'
+Plug 'bronson/vim-trailing-whitespace'
 Plug 'sbdchd/neoformat'
 Plug 'jiangmiao/auto-pairs'
 Plug 'chrisbra/Colorizer'
