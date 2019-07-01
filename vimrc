@@ -41,6 +41,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 
+Plug 'bkad/CamelCaseMotion'
 Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'ervandew/supertab'
 Plug 'vim-ruby/vim-ruby'
