@@ -28,16 +28,14 @@ Plug 'jxnblk/vim-mdx-js'
 Plug 'elixir-editors/vim-elixir'
 
 " Extensions
-Plug 'lifepillar/vim-mucomplete'
 Plug 'wellle/targets.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
 Plug 'sbdchd/neoformat'
 Plug 'jiangmiao/auto-pairs'
 Plug 'chrisbra/Colorizer'
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -74,18 +72,6 @@ vmap <C-d> ]egv
 nnoremap ; :
 nnoremap : ;
 nnoremap : :Ranger<CR>
-
-" Change cursor on insert
-" https://gist.github.com/andyfowler/1195581
-if exists('$TMUX')
-  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-else
-  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-endif
-:autocmd InsertEnter * set cul
-:autocmd InsertLeave * set nocul
 
 " Theme
 colorscheme $VIM_THEME
