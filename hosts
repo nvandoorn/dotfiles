@@ -14,3 +14,9 @@
 127.0.0.1 api.twitter.com
 127.0.0.1 reddit.com
 127.0.0.1 news.ycombinator.com
+
+# I don't even use these sites but their
+# reach is way too big
+127.0.0.1 instagram.com
+127.0.0.1 linkedin.com
+127.0.0.1 facebook.com
