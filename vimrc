@@ -87,9 +87,9 @@ nnoremap : ;
 nnoremap : :Ranger<CR>
 
 " Theme
-colorscheme $VIM_THEME
+colorscheme gruvbox
 let g:airline_powerline_fonts = 1
-let g:airline_theme=$VIM_AIRLINE_THEME
+let g:airline_theme='gruvbox'
 
 let g:jsx_ext_required = 0
 let g:ctrlp_working_path_mode = 'rw'

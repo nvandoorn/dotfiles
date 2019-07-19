@@ -23,10 +23,6 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 export TERM="screen-256color"
 
-# theme env vars
-export VIM_THEME='gruvbox'
-export VIM_AIRLINE_THEME='gruvbox'
-
 # command alias
 alias vi=vim
 alias g=git
