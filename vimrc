@@ -16,15 +16,14 @@ Plug 'danilo-augusto/vim-afterglow'
 Plug 'altercation/vim-colors-solarized'
 Plug 'flazz/vim-colorschemes'
 Plug 'morhetz/gruvbox'
+Plug 'mhartington/oceanic-next'
 
 " Syntax support
-Plug 'leafgarland/typescript-vim', { 'for': ['typescript', 'tsx'] }
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
-Plug 'jxnblk/vim-mdx-js'
 Plug 'elixir-editors/vim-elixir'
 Plug 'elzr/vim-json'
 
@@ -32,23 +31,15 @@ Plug 'elzr/vim-json'
 " Chuch of tpope
 Plug 'wellle/targets.vim'
 Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-dispatch'
-Plug 'tpope/vim-rails'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 
+Plug 'jiangmiao/auto-pairs'
 Plug 'bkad/CamelCaseMotion'
 Plug 'ConradIrwin/vim-bracketed-paste'
-Plug 'ervandew/supertab'
-Plug 'vim-ruby/vim-ruby'
-Plug 'bronson/vim-trailing-whitespace'
-Plug 'sbdchd/neoformat'
-Plug 'jiangmiao/auto-pairs'
-Plug 'chrisbra/Colorizer'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
