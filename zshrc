@@ -28,14 +28,6 @@ export TERM="screen-256color"
 export VIM_THEME='gruvbox'
 export VIM_AIRLINE_THEME='gruvbox'
 
-# tiny-care-terminal
-export TTC_REPOS=''
-export TTC_REPOS_DEPTH=2
-export TTC_GITBOT='gitlog'
-export TTC_WEATHER='Victoria, BC'
-export TTC_SAY_BOX='parrot'
-export TTC_APIKEYS=false
-
 # command alias
 alias vil='VIM_THEME=PaperColor vi'
 alias cat=ccat
