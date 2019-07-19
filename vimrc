@@ -51,7 +51,9 @@ call plug#end()
 
 " General config
 syntax on
-set timeoutlen=1000 ttimeoutlen=0
+set gfn=OperatorMonoLig\ Nerd\ Font:h16
+set timeoutlen=10 ttimeoutlen=0
+set background=dark
 set bs=2
 set tabstop=2
 set foldmethod=syntax
