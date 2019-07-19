@@ -19,7 +19,6 @@ chruby $DEFAULT_RUBY_VERSION
 
 
 # editor/term settings
-alias vi=vim
 export VISUAL=vim
 export EDITOR="$VISUAL"
 export TERM="screen-256color"
@@ -29,11 +28,13 @@ export VIM_THEME='gruvbox'
 export VIM_AIRLINE_THEME='gruvbox'
 
 # command alias
+alias vi=vim
+alias g=git
 alias vil='VIM_THEME=PaperColor vi'
 alias cat=ccat
-alias bue='bundle exec'
+alias bx='bundle exec'
 alias ls='lsd'
-alias leaky="pkill -9 -f 'rb-fsevent|rails|puma'"
+alias leaky="pkill -9 -f 'rb-fsevent|rails|puma|node'"
 
 # folder alias
 alias cddotfiles='cd $HOME/Documents/dotfiles'
