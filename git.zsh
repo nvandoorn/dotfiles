@@ -24,6 +24,8 @@ alias patchy='git add -p'
 alias stash='git stash'
 alias poppy='stash pop'
 alias gcat='gc --amend'
+alias aight='grb --continue'
+alias live='gpo $(active_branch)'
 alias dirty_rebase='stash && grbi && poppy'
 
 function quick_fix () {
@@ -83,4 +85,8 @@ function delete_each () {
   do
     git branch -D $in
   done < $STACK_CACHE_FILE
+}
+
+function try_it () {
+  gnu $1 $2/$1
 }

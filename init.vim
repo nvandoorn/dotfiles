@@ -8,7 +8,11 @@ function! BuildComposer(info)
   endif
 endfunction
 
-call plug#begin('~/.vim/plugged')
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+call plug#begin('~/.local/share/nvim/plugged')
 
 " Pick a theme, any theme, really
 Plug 'NLKNguyen/papercolor-theme'
@@ -23,13 +27,11 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-" Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
+Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 Plug 'elixir-editors/vim-elixir'
-Plug 'elzr/vim-json'
 
 " Extensions
 " Chuch of tpope
-Plug 'wellle/targets.vim'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-commentary'
@@ -37,23 +39,28 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 
+Plug 'scrooloose/nerdtree'
+Plug 'francoiscabrol/ranger.vim'
+Plug 'wellle/targets.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'bkad/CamelCaseMotion'
 Plug 'ConradIrwin/vim-bracketed-paste'
-Plug 'francoiscabrol/ranger.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 call plug#end()
 
 " General config
-syntax on
-set gfn=OperatorMonoLig\ Nerd\ Font:h16
+syntax enable
 set timeoutlen=10 ttimeoutlen=0
-set background=dark
+if $VIM_BACKGROUND == 'light'
+  set background=light
+endif
+if $VIM_BACKGROUND == 'dark'
+  set background=dark
+endif
 set bs=2
 set tabstop=2
 set foldmethod=syntax
@@ -69,6 +76,7 @@ set mouse=a
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/platforms/*,*/plugins/*,*/coverage/*,*/.nyc_output/*,*/build/*,*/.cache/*,*/public/*,*/dist/*,*/vendor/*
 filetype plugin on
 runtime macros/matchit.vim
+cnoreabbrev Spec Dispatch bundle exec rspec %
 
 " Key bindings
 nmap <C-u> [e
@@ -77,12 +85,25 @@ vmap <C-u> [egv
 vmap <C-d> ]egv
 nnoremap ; :
 nnoremap : ;
-nnoremap : :Ranger<CR>
+nnoremap : :NERDTree %<CR>
 
 " Theme
-colorscheme gruvbox
+colorscheme $VIM_THEME
 let g:airline_powerline_fonts = 1
-let g:airline_theme='gruvbox'
+let g:airline_theme=$VIM_AIRLINE_THEME
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#tabline#show_buffers = 0
+let g:airline#extensions#tabline#show_tab_nr = 0
+let g:airline#extensions#tabline#show_tab_type = 0
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = ''
+let g:airline#extensions#tabline#right_sep = ''
+let g:airline#extensions#tabline#right_alt_sep = ''
+let g:airline#extensions#tabline#show_close_button = 0
+let g:airline#extensions#tabline#show_splits = 0
+let g:airline#extensions#tabline#tab_min_count = 2
+let g:airline#extensions#branch#enabled = 0
 
 let g:jsx_ext_required = 0
 let g:ctrlp_working_path_mode = 'rw'
