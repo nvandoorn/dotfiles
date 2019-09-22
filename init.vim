@@ -48,7 +48,8 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -86,6 +87,7 @@ vmap <C-d> ]egv
 nnoremap ; :
 nnoremap : ;
 nnoremap : :NERDTree %<CR>
+nnoremap <C-s> :Dispatch bundle exec rspec %<cr>
 
 " Theme
 colorscheme $VIM_THEME
@@ -104,6 +106,9 @@ let g:airline#extensions#tabline#show_close_button = 0
 let g:airline#extensions#tabline#show_splits = 0
 let g:airline#extensions#tabline#tab_min_count = 2
 let g:airline#extensions#branch#enabled = 0
+
+" Distribute windows when resize happens.
+au VimResized * :wincmd =
 
 let g:jsx_ext_required = 0
 let g:ctrlp_working_path_mode = 'rw'

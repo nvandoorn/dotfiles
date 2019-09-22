@@ -1,7 +1,3 @@
-# Glockfiles
+# totfiles
 
-## Always keep these in your holster
-
-"It's half assed, but it's the right half of the ass" -- me writing all these zsh functions
-
-![screenshot](screenshot.png "Screenshot")
+These are my dotfiles. They help me write bugs faster.
