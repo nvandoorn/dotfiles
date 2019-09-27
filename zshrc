@@ -44,7 +44,6 @@ alias cddotfiles='cd $HOME/Documents/dotfiles'
 alias cdball='cd $HOME/Documents/smartballot'
 alias cdone='cd $HOME/Documents/one_feather'
 alias cdballj='cd $HOME/Documents/smart-ballot-journal'
-alias swerve='ssh nick@116.203.85.155'
 
 # avoid nesting tmux sessions
 if [ "$TMUX" = "" ]; then
@@ -77,8 +76,9 @@ function dbdown() {
 # TODO use a "trap" here so ctl + c
 # kills rails and webpack-dev-server with one go
 function railsdev() {
-  bin/rails server &> /dev/null &
-  bin/webpack-dev-server &> /dev/null &
+  bin/webpack-dev-server &
+  bx sidekiq &
+  bin/rails server
 }
 
 function diebitch() {

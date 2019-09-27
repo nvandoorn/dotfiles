@@ -4,14 +4,16 @@
 # Install command line tools
 brew install git neovim zsh vim emacs lsd tmux redis postgres \
   fzy fzf the_silver_searcher ccat ffmpeg go rustup openssl irssi scrot \
-  screenfetch ranger python3 python2 rsync hub wget
+  neofetch ranger python3 python2 rsync hub wget
 # Make sure we use the GNU variants of most tools
 brew install coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep
 
 # Install graphical apps
 brew cask install google-chrome karabiner-elements slack spotify sketch gpg-suite \
-  bartender spectacle visual-studio-code-insiders iterm2 caskroom/versions/firefoxdeveloperedition chromedriver \
-  keybase signal netlify-cli heroku/brew/heroku discord java android-sdk
+  bartender spectacle visual-studio-code-insiders iterm2 \
+  caskroom/versions/firefoxdeveloperedition chromedriver \
+  keybase signal netlify-cli heroku/brew/heroku discord java \
+  android-sdk appcleaner
 
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

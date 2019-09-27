@@ -80,6 +80,7 @@ runtime macros/matchit.vim
 cnoreabbrev Spec Dispatch bundle exec rspec %
 
 " Key bindings
+let mapleader = "\<Space>"
 nmap <C-u> [e
 nmap <C-d> ]e
 vmap <C-u> [egv
@@ -87,7 +88,13 @@ vmap <C-d> ]egv
 nnoremap ; :
 nnoremap : ;
 nnoremap : :NERDTree %<CR>
-nnoremap <C-s> :Dispatch bundle exec rspec %<cr>
+nnoremap <C-s> :w <bar> :Dispatch bundle exec rspec %<cr>
+nnoremap <leader>h <C-w>h
+nnoremap <leader>j <C-w>j
+nnoremap <leader>k <C-w>k
+nnoremap <leader>l <C-w>l
+nnoremap <leader><tab> :tabn<cr>
+nnoremap <leader><s-tab> :tabp<cr>
 
 " Theme
 colorscheme $VIM_THEME
