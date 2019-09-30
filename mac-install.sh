@@ -1,19 +1,13 @@
 # Install brew and use it as our entry point
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Install command line tools
-brew install git neovim zsh vim emacs lsd tmux redis postgres \
-  fzy fzf the_silver_searcher ccat ffmpeg go rustup openssl irssi scrot \
-  neofetch ranger python3 python2 rsync hub wget
-# Make sure we use the GNU variants of most tools
-brew install coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep
+function spacify {
+  tr '\n' ' ' < $1
+}
 
-# Install graphical apps
-brew cask install google-chrome karabiner-elements slack spotify sketch gpg-suite \
-  bartender spectacle visual-studio-code-insiders iterm2 \
-  caskroom/versions/firefoxdeveloperedition chromedriver \
-  keybase signal netlify-cli heroku/brew/heroku discord java \
-  android-sdk appcleaner
+
+brew install $(spacify brew.list)
+brew castk install $(spacify cask.list)
 
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
