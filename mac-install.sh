@@ -15,11 +15,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 
-# rbenv
-git clone https://github.com/rbenv/rbenv.git $HOME/.rbenv
-mkdir -p $HOME/.rbenv/plugins
-$ git clone https://github.com/rbenv/ruby-build.git $HOME/.rbenv/plugins/ruby-build
-
 # Plug plugin manager for neovim/vim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

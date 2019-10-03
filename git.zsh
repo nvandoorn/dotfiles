@@ -53,7 +53,14 @@ function list_branch_stack () {
 }
 
 function pop_branch_stack () {
-  head -n -1 $STACK_CACHE_FILE > $STACK_CACHE_FILE.tmp ; mv $STACK_CACHE_FILE.tmp $STACK_CACHE_FILE
+  LAST_BRANCH=$(head -n 1 $STACK_CACHE_FILE)
+  NEW_LIST=$(tail -n +2 $STACK_CACHE_FILE)
+  echo $NEW_LIST > $STACK_CACHE_FILE
+  echo $LAST_BRANCH
+}
+
+function pop_and_checkout () {
+  gch $(pop_branch_stack)
 }
 
 function clear_branch_stack () {
@@ -79,6 +86,8 @@ function push_each () {
   done < $STACK_CACHE_FILE
   git checkout master
 }
+
+
 
 function delete_each () {
   while read in

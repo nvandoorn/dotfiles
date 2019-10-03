@@ -11,7 +11,9 @@ source $DOTFILES_PATH/git.zsh
 # package/version managers
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-eval "$(rbenv init -)"
+export RUBIES="$HOME/.rubies"
+source /usr/local/share/chruby/chruby.sh
+
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.gobin:$PATH"
@@ -87,6 +89,10 @@ function diebitch() {
 
 function togif() {
   ffmpeg -i $1 -s 600x400 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=$2 --delay=3 > out.gif
+}
+
+function smol() {
+  ffmpeg -an -i $1 -vcodec libx264 -pix_fmt yuv420p -profile:v baseline -level 3 $2
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

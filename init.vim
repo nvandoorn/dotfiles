@@ -95,6 +95,9 @@ nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
 nnoremap <leader><tab> :tabn<cr>
 nnoremap <leader><s-tab> :tabp<cr>
+nnoremap <C-g> :G<cr>
+nnoremap <C-c> :Gcommit<cr>
+nnoremap <C-l> :Glog -100<cr>
 
 " Theme
 colorscheme $VIM_THEME

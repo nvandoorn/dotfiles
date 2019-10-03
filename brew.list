@@ -32,3 +32,6 @@ gnutls
 gnu-indent
 gnu-getopt
 grep
+fortune
+ruby-install
+chruby
