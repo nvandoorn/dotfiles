@@ -14,21 +14,20 @@ export NVM_DIR="$HOME/.nvm"
 export RUBIES="$HOME/.rubies"
 source /usr/local/share/chruby/chruby.sh
 
-export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.gobin:$PATH"
-
 
 # editor/term settings
 export VISUAL=nvim
 export EDITOR=$VISUAL
 export TERM=screen-256color
 export VIM_BACKGROUND=dark
-export VIM_THEME=OceanicNext
-export VIM_AIRLINE_THEME=oceanicnext
+export VIM_THEME=gruvbox
+export VIM_AIRLINE_THEME=gruvbox
 
 # command alias
 alias vi=nvim
+alias vim=vi
 alias v=vi
 alias vl="VIM_THEME=PaperColor VIM_AIRLINE_THEME=papercolor VIM_BACKGROUND=light v"
 alias g=git
@@ -45,12 +44,6 @@ alias sleepy="sudo pmset -a sleep 1; sudo pmset -a hibernatemode 25; sudo pmset 
 alias cddotfiles='cd $HOME/Documents/dotfiles'
 alias cdball='cd $HOME/Documents/smartballot'
 alias cdone='cd $HOME/Documents/one_feather'
-alias cdballj='cd $HOME/Documents/smart-ballot-journal'
-
-# avoid nesting tmux sessions
-if [ "$TMUX" = "" ]; then
-  tmux;
-fi
 
 # backup helper function
 function backup() {
@@ -59,10 +52,6 @@ function backup() {
   rsync -rua --info=progress2 --exclude-from="$DOTFILES_PATH/rsync-ignore.txt" $HOME/Work /Volumes/nick/backups
   rsync -rua --info=progress2 --exclude-from="$DOTFILES_PATH/rsync-ignore.txt" $HOME/Wallpapers /Volumes/nick/backups
   rsync -rua --info=progress2 --exclude-from="$DOTFILES_PATH/rsync-ignore.txt" $HOME/Pictures /Volumes/nick/backups
-}
-
-function chpwd() {
-  # checkVersions
 }
 
 function dbup() {
@@ -94,5 +83,3 @@ function togif() {
 function smol() {
   ffmpeg -an -i $1 -vcodec libx264 -pix_fmt yuv420p -profile:v baseline -level 3 $2
 }
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

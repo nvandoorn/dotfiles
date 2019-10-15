@@ -62,6 +62,7 @@ endif
 if $VIM_BACKGROUND == 'dark'
   set background=dark
 endif
+set shell=$SHELL
 set bs=2
 set tabstop=2
 set foldmethod=syntax

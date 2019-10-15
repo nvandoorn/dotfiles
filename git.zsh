@@ -27,6 +27,7 @@ alias gcat='gc --amend'
 alias aight='grb --continue'
 alias live='gpo $(active_branch)'
 alias dirty_rebase='stash && grbi && poppy'
+alias gsch='gch $(g branch | fzy)'
 
 function quick_fix () {
   stash && gch master && gnu $1 && poppy
@@ -86,8 +87,6 @@ function push_each () {
   done < $STACK_CACHE_FILE
   git checkout master
 }
-
-
 
 function delete_each () {
   while read in
