@@ -21,6 +21,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'flazz/vim-colorschemes'
 Plug 'morhetz/gruvbox'
 Plug 'mhartington/oceanic-next'
+Plug 'joshdick/onedark.vim'
 
 " Syntax support
 Plug 'HerringtonDarkholme/yats.vim'
@@ -50,6 +51,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -81,24 +83,27 @@ runtime macros/matchit.vim
 cnoreabbrev Spec Dispatch bundle exec rspec %
 
 " Key bindings
-let mapleader = "\<Space>"
-nmap <C-u> [e
-nmap <C-d> ]e
-vmap <C-u> [egv
-vmap <C-d> ]egv
 nnoremap ; :
 nnoremap : ;
 nnoremap : :NERDTree %<CR>
 nnoremap <C-s> :w <bar> :Dispatch bundle exec rspec %<cr>
+nnoremap <C-g> :G<cr>
+nnoremap <C-c> :Gcommit<cr>
+nnoremap <C-l> :Glog -100<cr>
+let mapleader = "\<Space>"
+
+" I can't get leader working for some reason
+" that I'm really unsure of
+nmap <leader-u> [e
+nmap <leader-d> ]e
+vmap <leader-u> [egv
+vmap <leader-d> ]egv
 nnoremap <leader>h <C-w>h
 nnoremap <leader>j <C-w>j
 nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
 nnoremap <leader><tab> :tabn<cr>
 nnoremap <leader><s-tab> :tabp<cr>
-nnoremap <C-g> :G<cr>
-nnoremap <C-c> :Gcommit<cr>
-nnoremap <C-l> :Glog -100<cr>
 
 " Theme
 colorscheme $VIM_THEME
