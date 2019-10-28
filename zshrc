@@ -13,6 +13,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 export RUBIES="$HOME/.rubies"
 source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+source $DOTFILES_PATH/nvm.zsh
 
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.gobin:$PATH"
@@ -22,8 +24,8 @@ export VISUAL=nvim
 export EDITOR=$VISUAL
 export TERM=screen-256color
 export VIM_BACKGROUND=dark
-export VIM_THEME=gruvbox
-export VIM_AIRLINE_THEME=gruvbox
+export VIM_THEME=onedark
+export VIM_AIRLINE_THEME=onedark
 
 # command alias
 alias vi=nvim
@@ -35,7 +37,7 @@ alias cat=ccat
 alias bx='bundle exec'
 alias bxr='bx rake'
 alias s='bx rspec'
-alias ls=lsd
+alias ls='lsd -1'
 alias leaky="pkill -9 -f 'rb-fsevent|rails|puma|node'"
 alias awake="sudo pmset -a sleep 0; sudo pmset -a hibernatemode 0; sudo pmset -a disablesleep 1;"
 alias sleepy="sudo pmset -a sleep 1; sudo pmset -a hibernatemode 25; sudo pmset -a disablesleep 0;"
@@ -45,6 +47,18 @@ alias cddotfiles='cd $HOME/Documents/dotfiles'
 alias cdball='cd $HOME/Documents/smartballot'
 alias cdone='cd $HOME/Documents/one_feather'
 
+function vs() {
+  v $(need)
+}
+
+function ss() {
+  s $(need)
+}
+
+function need() {
+  ag . -l | fzy
+}
+
 # backup helper function
 function backup() {
   rsync -rua --info=progress2 --exclude-from="$DOTFILES_PATH/rsync-ignore.txt" $HOME/Documents /Volumes/nick/backups
@@ -52,6 +66,10 @@ function backup() {
   rsync -rua --info=progress2 --exclude-from="$DOTFILES_PATH/rsync-ignore.txt" $HOME/Work /Volumes/nick/backups
   rsync -rua --info=progress2 --exclude-from="$DOTFILES_PATH/rsync-ignore.txt" $HOME/Wallpapers /Volumes/nick/backups
   rsync -rua --info=progress2 --exclude-from="$DOTFILES_PATH/rsync-ignore.txt" $HOME/Pictures /Volumes/nick/backups
+}
+
+function killer() {
+  kill -9 $(ps aux | fzy | gawk '{print$2}')
 }
 
 function dbup() {
