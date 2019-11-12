@@ -1,10 +1,8 @@
-# Install brew and use it as our entry point
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 function spacify {
   tr '\n' ' ' < $1
 }
 
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install $(spacify brew.list)
 brew castk install $(spacify cask.list)
