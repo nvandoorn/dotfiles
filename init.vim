@@ -55,7 +55,6 @@ call plug#end()
 
 " General config
 syntax enable
-set timeoutlen=10 ttimeoutlen=0
 if $VIM_BACKGROUND == 'light'
   set background=light
 endif
