@@ -40,6 +40,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 
+Plug 'srstevenson/vim-picker'
 Plug 'scrooloose/nerdtree'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'wellle/targets.vim'
@@ -48,9 +49,6 @@ Plug 'bkad/CamelCaseMotion'
 Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
 
 call plug#end()
@@ -90,20 +88,12 @@ nnoremap <C-s> :w <bar> :Dispatch bundle exec rspec %<cr>
 nnoremap <C-g> :G<cr>
 nnoremap <C-c> :Gcommit<cr>
 nnoremap <C-l> :Glog -100<cr>
-let mapleader = "\<Space>"
+nnoremap <C-x> :PickerSplit<cr>
+nnoremap <C-t> :PickerTabedit<cr>
+nnoremap <C-v> :PickerVsplit<cr>
 
-" I can't get leader working for some reason
-" that I'm really unsure of
-nmap <leader-u> [e
-nmap <leader-d> ]e
-vmap <leader-u> [egv
-vmap <leader-d> ]egv
-nnoremap <leader>h <C-w>h
-nnoremap <leader>j <C-w>j
-nnoremap <leader>k <C-w>k
-nnoremap <leader>l <C-w>l
-nnoremap <leader><tab> :tabn<cr>
-nnoremap <leader><s-tab> :tabp<cr>
+let g:picker_custom_find_executable = 'ag'
+let g:picker_custom_find_flags = '. -l'
 
 " Theme
 colorscheme $VIM_THEME
