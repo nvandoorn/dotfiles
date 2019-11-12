@@ -38,6 +38,10 @@ function dbdown() {
   pg_ctl -D /usr/local/var/postgres stop
 }
 
+function fuckredis() {
+  redis-cli flushdb
+}
+
 # TODO use a "trap" here so ctl + c
 # kills rails and webpack-dev-server with one go
 function railsdev() {
