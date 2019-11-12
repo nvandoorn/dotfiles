@@ -74,23 +74,30 @@ set ai
 set number
 set relativenumber
 set mouse=a
-" TODO load this from a file
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/platforms/*,*/plugins/*,*/coverage/*,*/.nyc_output/*,*/build/*,*/.cache/*,*/public/*,*/dist/*,*/vendor/*
 filetype plugin on
 runtime macros/matchit.vim
 cnoreabbrev Spec Dispatch bundle exec rspec %
 
+let mapleader = "\<Space>"
 " Key bindings
 nnoremap ; :
 nnoremap : ;
-nnoremap : :NERDTree %<CR>
-nnoremap <C-s> :w <bar> :Dispatch bundle exec rspec %<cr>
-nnoremap <C-g> :G<cr>
-nnoremap <C-c> :Gcommit<cr>
-nnoremap <C-l> :Glog -100<cr>
-nnoremap <C-x> :PickerSplit<cr>
-nnoremap <C-t> :PickerTabedit<cr>
-nnoremap <C-v> :PickerVsplit<cr>
+
+nnoremap <Leader>r :Ranger<CR>
+nnoremap <Leader>n :NERDTree %<CR>
+nnoremap <Leader>s :w <bar> :Dispatch bundle exec rspec %<cr>
+nnoremap <Leader>g :G<cr>
+nnoremap <Leader>c :Gcommit<cr>
+nnoremap <Leader>l :0Glog -100<cr>
+nnoremap <Leader>x :PickerSplit<cr>
+nnoremap <Leader>t :PickerTabedit<cr>
+nnoremap <Leader>v :PickerVsplit<cr>
+nnoremap <leader>h <C-w>h
+nnoremap <leader>j <C-w>j
+nnoremap <leader>k <C-w>k
+nnoremap <leader>l <C-w>l
+nnoremap <leader><tab> :tabn<cr>
+nnoremap <leader><s-tab> :tabp<cr>
 
 let g:picker_custom_find_executable = 'ag'
 let g:picker_custom_find_flags = '. -l'
