@@ -2,3 +2,5 @@
 .git-branch-stack.txt
 *.swp
 bundle
+*.out
+*.db
