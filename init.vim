@@ -85,8 +85,10 @@ nnoremap : ;
 nnoremap <Leader>r :Ranger<CR>
 nnoremap <Leader>n :NERDTree %<CR>
 nnoremap <Leader>s :w <bar> :Dispatch bundle exec rspec %<cr>
+nnoremap <Leader>b :Gblame<cr>
 nnoremap <Leader>g :G<cr>
 nnoremap <Leader>c :Gcommit<cr>
+nnoremap <Leader>/ :noh<cr>
 nnoremap <Leader>l :0Glog -100<cr>
 nnoremap <Leader>x :PickerSplit<cr>
 nnoremap <Leader>t :PickerTabedit<cr>
