@@ -37,3 +37,4 @@ ruby-install
 chruby
 ctags
 cscope
+jq
