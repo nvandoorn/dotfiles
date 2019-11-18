@@ -90,6 +90,7 @@ nnoremap <Leader>c :Gcommit<cr>
 nnoremap <Leader>/ :noh<cr>
 nnoremap <Leader>l :0Glog -100<cr>
 nnoremap <Leader>x :PickerSplit<cr>
+nnoremap <Leader>p :PickerEdit<cr>
 nnoremap <Leader>t :PickerTabedit<cr>
 nnoremap <Leader>v :PickerVsplit<cr>
 nnoremap <leader>h <C-w>h
