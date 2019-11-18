@@ -24,6 +24,14 @@ function need() {
   ag . -l | fzy
 }
 
+function dig() {
+  ag . | fzy | gawk '{split($0, a, ":"); print a[1]}'
+}
+
+function vd() {
+  v $(dig)
+}
+
 function killer() {
   kill -9 $(ps aux | fzy | gawk '{print$2}')
 }
