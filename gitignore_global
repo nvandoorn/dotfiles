@@ -1,5 +1,6 @@
 .DS_Store
 .git-branch-stack.txt
+.fixstack.txt
 *.swp
 bundle
 *.out
