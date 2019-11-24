@@ -36,7 +36,6 @@ Plug 'elixir-editors/vim-elixir'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 
@@ -76,11 +75,14 @@ filetype plugin on
 runtime macros/matchit.vim
 cnoreabbrev Spec Dispatch bundle exec rspec %
 
-let mapleader = "\<Space>"
 " Key bindings
+let mapleader = "\<Space>"
 nnoremap ; :
 nnoremap : ;
 
+
+nnoremap <Leader>] :cnext<CR>
+nnoremap <Leader>[ :cprev<CR>
 nnoremap <Leader>r :Ranger<CR>
 nnoremap <Leader>n :NERDTree %<CR>
 nnoremap <Leader>s :w <bar> :Dispatch bundle exec rspec %<cr>
