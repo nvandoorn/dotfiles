@@ -28,6 +28,8 @@ alias aight='grb --continue'
 alias live='gpo $(active_branch)'
 alias dirty_rebase='stash && grbi && poppy'
 alias gsch='gch $(g branch | fzy)'
+alias pr='gd master HEAD'
+alias changelist='git diff-tree --no-commit-id --name-only -r'
 
 function quick_fix () {
   stash && gch master && gnu $1 && poppy
