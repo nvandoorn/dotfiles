@@ -30,6 +30,7 @@ alias dirty_rebase='stash && grbi && poppy'
 alias gsch='gch $(g branch | fzy)'
 alias pr='gd master HEAD'
 alias changelist='git diff-tree --no-commit-id --name-only -r'
+alias glog='v -c "Glog -100"'
 
 function quick_fix () {
   stash && gch master && gnu $1 && poppy
