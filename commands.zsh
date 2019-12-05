@@ -29,7 +29,7 @@ function need() {
 }
 
 function dig() {
-  ag . | fzy | gawk '{split($0, a, ":"); print a[1]}'
+  ag . | fzy -l 20 | gawk '{split($0, a, ":"); print a[1]}'
 }
 
 function vd() {
