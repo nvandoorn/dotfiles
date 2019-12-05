@@ -1,0 +1,13 @@
+#!/usr/bin/env zsh
+if [ "$#" -ne 3 ]; then
+    echo "Usage: togif <input file> <output file> <scale>\n"
+    echo "Example with 500px width and auto height:\n"
+    echo "  \$ togif myinput.mov myoutput.gif 500:-1"
+    exit -1
+fi
+
+TEMP_FOLDER=/tmp/gifconvert-$(date)
+mkdir $TEMP_FOLDER
+ffmpeg -i $1 -vf scale=$3 -r 10 $TEMP_FOLDER/ffout%3d.png
+convert -delay 8 -loop 0 $TEMP_FOLDER/ffout*.png $2
+rm -rf $TEMP_FOLDER

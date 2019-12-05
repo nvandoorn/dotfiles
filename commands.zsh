@@ -66,10 +66,6 @@ function diebitch() {
   kill $(lsof -i :$1 -t)
 }
 
-function togif() {
-  ffmpeg -i $1 -s 600x400 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=$2 --delay=3 > out.gif
-}
-
 function smol() {
   ffmpeg -an -i $1 -vcodec libx264 -pix_fmt yuv420p -profile:v baseline -level 3 $2
 }

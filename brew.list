@@ -12,6 +12,7 @@ fzf
 the_silver_searcher
 ccat
 ffmpeg
+imagemagick
 go
 rustup
 openssl
