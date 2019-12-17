@@ -1,3 +1,5 @@
+RUBY_VERSION="2.6.5"
+
 function spacify {
   tr '\n' ' ' < $1
 }
@@ -5,7 +7,7 @@ function spacify {
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install $(spacify brew.list)
-brew castk install $(spacify cask.list)
+brew cask install $(spacify cask.list)
 
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -29,6 +31,15 @@ ln -sfn $PWD/gitconfig $HOME/.gitconfig
 ln -sfn $PWD/gitignore_global $HOME/.gitignore_global
 ln -sfn $PWD/karabiner.json $HOME/.config/karabiner/karabiner.json
 ln -sfn $PWD/com.googlecode.iterm2.plist $HOME/Library/Preferences/com.googlecode.iterm2.plist
+
+source $HOME/.zshrc
+nvm install --lts
+ruby-install ruby $RUBY_VERSION
+chruby ruby-$RUBY_VERSION
+
+npm install -g $(spacify npm.list)
+gem install -g $(spacify gem.list)
+
 # This repo can be cloned/installed anywhere
 # but we always make a link here such that
 # other scripts know where to find things
