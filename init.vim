@@ -99,6 +99,10 @@ nnoremap <leader>h <C-w>h
 nnoremap <leader>j <C-w>j
 nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
+nnoremap <C-w>h 20<C-w><
+nnoremap <C-w>l 20<C-w>>
+nnoremap <C-w>j 20<C-w>+
+nnoremap <C-w>k 20<C-w>-
 nnoremap <leader><tab> :tabn<cr>
 nnoremap <leader><s-tab> :tabp<cr>
 
