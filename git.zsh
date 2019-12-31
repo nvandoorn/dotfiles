@@ -32,6 +32,14 @@ alias pr='gd master HEAD'
 alias changelist='git diff-tree --no-commit-id --name-only -r'
 alias glog='v -c "Glog -100"'
 
+function gblame () {
+  v $1 -c Gblame
+}
+
+function sblame () {
+  v $(need) -c Gblame
+}
+
 function quick_fix () {
   stash && gch master && gnu $1 && poppy
 }
