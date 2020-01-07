@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+cat $2 | tr '\n' ' ' | xargs heroku config:set -a $1
