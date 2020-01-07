@@ -9,6 +9,7 @@ source $ZSH/oh-my-zsh.sh
 source $DOTFILES_PATH/git.zsh
 source $DOTFILES_PATH/commands.zsh
 source $DOTFILES_PATH/personal.zsh
+source $DOTFILES_PATH/work.zsh
 
 # package/version managers
 export NVM_DIR="$HOME/.nvm"

@@ -1,8 +1,4 @@
-# folder alias
 alias cddotfiles='cd $HOME/Documents/dotfiles'
-alias cdball='cd $HOME/Documents/smartballot'
-alias cdone='cd $HOME/Documents/one_feather'
-alias supergood='hub pull-request -r jarednorman -r alistairnorman'
 
 # backup helper function
 # TODO:
