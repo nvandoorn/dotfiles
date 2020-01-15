@@ -8,6 +8,7 @@ alias bx='bundle exec'
 alias bxr='bx rake'
 alias s='bx rspec'
 alias ls='lsd -1'
+alias r='bin/rails'
 alias leaky="pkill -9 -f 'rb-fsevent|rails|puma|node'"
 alias awake="sudo pmset -a sleep 0; sudo pmset -a hibernatemode 0; sudo pmset -a disablesleep 1;"
 alias sleepy="sudo pmset -a sleep 1; sudo pmset -a hibernatemode 25; sudo pmset -a disablesleep 0;"
