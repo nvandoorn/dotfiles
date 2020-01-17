@@ -20,6 +20,9 @@ source /usr/local/share/chruby/auto.sh
 source $DOTFILES_PATH/nvm.zsh
 export PATH="$HOME/.gobin:$PATH"
 
+# Use the latest ruby for shells by default
+chruby $(ls ~/.rubies | tail -n 1)
+
 # Custom scripts and binaries
 export PATH="$DOTFILES_PATH/bin:$PATH"
 
