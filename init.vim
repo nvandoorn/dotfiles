@@ -73,6 +73,8 @@ set relativenumber
 set mouse=a
 filetype plugin on
 runtime macros/matchit.vim
+
+" Shorthand commands
 cnoreabbrev Spec Dispatch bundle exec rspec %
 
 " Key bindings
@@ -80,7 +82,9 @@ let mapleader = "\<Space>"
 nnoremap ; :
 nnoremap : ;
 
-
+" Roll yur own tpope
+nnoremap <Leader>} :set spell<CR>
+nnoremap <Leader>{ :set spell&<CR>
 nnoremap <Leader>] :cnext<CR>
 nnoremap <Leader>[ :cprev<CR>
 nnoremap <Leader>r :Ranger<CR>
