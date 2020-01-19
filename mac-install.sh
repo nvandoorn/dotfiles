@@ -31,6 +31,7 @@ ln -sfn $PWD/gitconfig $HOME/.gitconfig
 ln -sfn $PWD/gitignore_global $HOME/.gitignore_global
 ln -sfn $PWD/karabiner.json $HOME/.config/karabiner/karabiner.json
 ln -sfn $PWD/com.googlecode.iterm2.plist $HOME/Library/Preferences/com.googlecode.iterm2.plist
+ln -sfn $PWD/teamocil $HOME/.teamocil
 
 source $HOME/.zshrc
 nvm install --lts

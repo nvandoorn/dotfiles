@@ -1,0 +1,17 @@
+name: smartballot
+windows:
+  - name: editor
+    root: ~/work/smartballot
+    layout: tiled
+    panes:
+      - vs
+  - name: console
+    root: ~/work/smartballot
+    layout: tiled
+    panes:
+      - bin/rails server
+      - bundle exec sidekiq
+      - bin/webpack-dev-server
+      - commands:
+        - git pull origin
+        - glog
