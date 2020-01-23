@@ -9,9 +9,13 @@ windows:
     root: ~/work/one_feather
     layout: tiled
     panes:
-      - bin/rails server
       - bundle exec sidekiq
-      - bin/webpack-dev-server
+      - commands:
+        - chruby $(cat .ruby-version)
+        - bin/rails server -p 3002
+      - commands:
+        - fnm use
+        - bin/webpack-dev-server
       - commands:
         - git pull origin
         - glog

@@ -16,7 +16,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 export RUBIES="$HOME/.rubies"
 source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
 source $DOTFILES_PATH/nvm.zsh
 export PATH="$HOME/.gobin:$PATH"
 

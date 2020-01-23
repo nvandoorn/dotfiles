@@ -9,9 +9,13 @@ windows:
     root: ~/work/smartballot
     layout: tiled
     panes:
-      - bin/rails server
       - bundle exec sidekiq
-      - bin/webpack-dev-server
+      - commands:
+        - chruby $(cat .ruby-version)
+        - bin/rails server
+      - commands:
+        - fnm use
+        - bin/webpack-dev-server
       - commands:
         - git pull origin
         - glog
