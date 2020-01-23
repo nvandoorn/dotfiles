@@ -12,9 +12,6 @@ brew cask install $(spacify cask.list)
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-
 # Plug plugin manager for neovim/vim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -34,7 +31,6 @@ ln -sfn $PWD/com.googlecode.iterm2.plist $HOME/Library/Preferences/com.googlecod
 ln -sfn $PWD/teamocil $HOME/.teamocil
 
 source $HOME/.zshrc
-nvm install --lts
 ruby-install ruby $RUBY_VERSION
 chruby ruby-$RUBY_VERSION
 
