@@ -1,19 +1,22 @@
 name: onefeather
 windows:
   - name: editor
-    root: ~/work/one_feather
+    root: ~/work/onefeather
     layout: tiled
     panes:
       - vs
   - name: console
-    root: ~/work/one_feather
+    root: ~/work/onefeather
     layout: tiled
     panes:
-      - bundle exec sidekiq
       - commands:
-        - chruby $(cat .ruby-version)
+        - thisruby
+        - bundle exec sidekiq
+      - commands:
+        - thisruby
         - bin/rails server -p 3002
       - commands:
+        - thisruby
         - fnm use
         - bin/webpack-dev-server
       - commands:
