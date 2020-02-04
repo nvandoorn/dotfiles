@@ -11,9 +11,8 @@ source $DOTFILES_PATH/commands.zsh
 source $DOTFILES_PATH/personal.zsh
 source $DOTFILES_PATH/work.zsh
 
-# package/version managers
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# version managers
+eval "`fnm env --multi`"
 export RUBIES="$HOME/.rubies"
 source /usr/local/share/chruby/chruby.sh
 export PATH="$HOME/.gobin:$PATH"
