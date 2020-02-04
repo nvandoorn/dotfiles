@@ -54,3 +54,5 @@ mkdir $HOME/Screenshots
 defaults write com.apple.screencapture location -string $HOME/Screenshots
 defaults write com.apple.screencapture show-thumbnail -bool FALSE
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+cd /Applications
+sudo chflags hidden Messages.app Mail.app Maps.app Siri.app News.app Home.app FaceTime.app Chess.app Books.app Dictionary.app
