@@ -1,4 +1,4 @@
-RUBY_VERSION="2.6.5"
+RUBY_VERSION="2.7.0"
 
 function spacify {
   tr '\n' ' ' < $1
