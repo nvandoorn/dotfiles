@@ -94,7 +94,6 @@ nnoremap <Leader>b :Gblame<cr>
 nnoremap <Leader>g :G<cr>
 nnoremap <Leader>c :Gcommit<cr>
 nnoremap <Leader>/ :noh<cr>
-nnoremap <Leader>l :0Glog -100<cr>
 nnoremap <Leader>x :PickerSplit<cr>
 nnoremap <Leader>p :PickerEdit<cr>
 nnoremap <Leader>t :PickerTabedit<cr>
