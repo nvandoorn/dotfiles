@@ -21,9 +21,9 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Link it all together
+sudo ln -sfn $PWD/hosts /etc/hosts
 ln -sfn $PWD/zshrc $HOME/.zshrc
 ln -sfn $PWD/tmux.conf $HOME/.tmux.conf
-sudo ln -sfn $PWD/hosts /etc/hosts
 ln -sfn $PWD/vimrc $HOME/.vimrc
 ln -sfn $PWD/alacritty.yml $HOME/.alacritty.yml
 ln -sfn $PWD/gitconfig $HOME/.gitconfig
