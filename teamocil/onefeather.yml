@@ -1,12 +1,12 @@
 name: onefeather
 windows:
   - name: editor
-    root: ~/work/onefeather
+    root: ~/work/one_feather
     layout: tiled
     panes:
       - vs
   - name: console
-    root: ~/work/onefeather
+    root: ~/work/one_feather
     layout: tiled
     panes:
       - commands:

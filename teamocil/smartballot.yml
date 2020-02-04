@@ -4,7 +4,7 @@ windows:
     root: ~/work/smartballot
     layout: tiled
     panes:
-      - vs
+      - thisruby
   - name: console
     root: ~/work/smartballot
     layout: tiled
