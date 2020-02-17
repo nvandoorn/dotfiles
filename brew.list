@@ -20,7 +20,6 @@ irssi
 neofetch
 ranger
 python3
-python2
 rsync
 hub
 wget
@@ -41,5 +40,5 @@ cscope
 jq
 scdoc
 mas
+Schniz/tap/fnm
 pivotal/tap/git-together
-fnm
