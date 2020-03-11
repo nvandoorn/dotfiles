@@ -4,16 +4,19 @@ windows:
     root: ~/work/one_feather
     layout: tiled
     panes:
-      - vs
+      - thisruby
+      - fnm use
   - name: console
     root: ~/work/one_feather
     layout: tiled
     panes:
       - commands:
         - thisruby
+        - fnm use
         - bundle exec sidekiq
       - commands:
         - thisruby
+        - fnm use
         - bin/rails server -p 3002
       - commands:
         - thisruby
