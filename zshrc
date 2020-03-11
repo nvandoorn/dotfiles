@@ -15,6 +15,7 @@ source $DOTFILES_PATH/work.zsh
 eval "`fnm env --multi`"
 source /usr/local/share/chruby/chruby.sh
 export PATH="$HOME/.gobin:$PATH"
+source $HOME/.kiex/scripts/kiex
 
 # Use the latest ruby for shells by default
 chruby $(ls ~/.rubies | tail -n 1)
