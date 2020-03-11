@@ -13,7 +13,6 @@ source $DOTFILES_PATH/work.zsh
 
 # version managers
 eval "`fnm env --multi`"
-export RUBIES="$HOME/.rubies"
 source /usr/local/share/chruby/chruby.sh
 export PATH="$HOME/.gobin:$PATH"
 
