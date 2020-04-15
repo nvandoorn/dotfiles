@@ -133,7 +133,6 @@ let g:airline#extensions#branch#enabled = 0
 " Distribute windows when resize happens.
 au VimResized * :wincmd =
 
-let g:jsx_ext_required = 0
 let g:ctrlp_working_path_mode = 'rw'
 
 augroup jbuilder

@@ -3,7 +3,8 @@ alias vim=vi
 alias v=vi
 alias vl="VIM_THEME=PaperColor VIM_AIRLINE_THEME=papercolor VIM_BACKGROUND=light v"
 alias g=git
-alias cat=ccat
+alias cat=bat
+alias c=cat
 alias bx='bundle exec'
 alias bxr='bx rake'
 alias s='bx rspec'
@@ -57,14 +58,6 @@ function dbdown() {
 
 function fuckredis() {
   redis-cli flushdb
-}
-
-# TODO use a "trap" here so ctl + c
-# kills rails and webpack-dev-server with one go
-function railsdev() {
-  bin/webpack-dev-server &
-  bx sidekiq &
-  bin/rails server
 }
 
 function diebitch() {
