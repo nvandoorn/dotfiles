@@ -14,6 +14,10 @@ alias leaky="pkill -9 -f 'rb-fsevent|rails|puma|node'"
 alias awake="sudo pmset -a sleep 0; sudo pmset -a hibernatemode 0; sudo pmset -a disablesleep 1;"
 alias sleepy="sudo pmset -a sleep 1; sudo pmset -a hibernatemode 25; sudo pmset -a disablesleep 0;"
 
+function peek() {
+  c $(need)
+}
+
 function thisruby() {
   chruby $(cat .ruby-version)
 }
@@ -65,7 +69,7 @@ function diebitch() {
 }
 
 function smol() {
-  ffmpeg -an -i $1 -vcodec libx264 -pix_fmt yuv420p -profile:v baseline -level 3 $2
+  ffmpeg -i $1 -vcodec libx264 -pix_fmt yuv420p -profile:v baseline -level 3 $2
 }
 
 function spacify {
