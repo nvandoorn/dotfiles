@@ -39,6 +39,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 
+Plug 'sjl/splice.vim'
 Plug 'srstevenson/vim-picker'
 Plug 'scrooloose/nerdtree'
 Plug 'francoiscabrol/ranger.vim'
