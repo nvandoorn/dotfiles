@@ -28,5 +28,5 @@ export VISUAL=nvim
 export EDITOR=$VISUAL
 export TERM=screen-256color
 export VIM_BACKGROUND=dark
-export VIM_THEME=onedark
-export VIM_AIRLINE_THEME=onedark
+export VIM_THEME=gruvbox
+export VIM_AIRLINE_THEME=gruvbox
