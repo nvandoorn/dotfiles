@@ -49,6 +49,7 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
+Plug 'mileszs/ack.vim'
 
 call plug#end()
 
@@ -74,6 +75,10 @@ set relativenumber
 set mouse=a
 filetype plugin on
 runtime macros/matchit.vim
+
+set grepprg=ag\ --vimgrep\ --no-heading
+set grepformat=%f:%l:%c:%m,%f:%l:%m
+let g:ackprg = 'ag --vimgrep --no-heading'
 
 " Shorthand commands
 cnoreabbrev Spec Dispatch bundle exec rspec %
