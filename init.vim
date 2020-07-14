@@ -24,12 +24,17 @@ Plug 'mhartington/oceanic-next'
 Plug 'joshdick/onedark.vim'
 
 " Syntax support
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'mxw/vim-jsx'
-Plug 'pangloss/vim-javascript'
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 Plug 'elixir-editors/vim-elixir'
+Plug 'jason0x43/vim-js-indent'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
+Plug 'rust-lang/rust.vim'
+Plug 'vim-ruby/vim-ruby'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 " Extensions
 " Chuch of tpope
