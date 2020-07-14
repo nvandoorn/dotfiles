@@ -26,6 +26,10 @@ function vls() {
   vl $(need)
 }
 
+function vg() {
+  v -c "G"
+}
+
 function vs() {
   v $(need)
 }
