@@ -2,6 +2,7 @@ alias vi=nvim
 alias vim=vi
 alias v=vi
 alias vl="VIM_THEME=PaperColor VIM_AIRLINE_THEME=papercolor VIM_BACKGROUND=light v"
+alias git=git-together
 alias g=git
 alias cat=bat
 alias c=cat
