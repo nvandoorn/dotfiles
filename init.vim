@@ -157,5 +157,7 @@ augroup es
 augroup END
 
 set spelllang=en
-au BufRead *.md setlocal spell
-au BufRead *.markdown setlocal spell
+autocmd FileType markdown setlocal spell
+autocmd FileType gitcommit setlocal spell
+autocmd FileType markdown setlocal complete+=kspell
+autocmd FileType gitcommit setlocal complete+=kspell
