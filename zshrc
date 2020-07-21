@@ -1,28 +1,6 @@
+# Environment
 export DOTFILES_PATH=$HOME/.dotfiles
 export KEYTIMEOUT=1
-
-export ZSH_THEME=sunrise
-
-# git alias/functions
-source $DOTFILES_PATH/git.zsh
-source $DOTFILES_PATH/commands.zsh
-source $DOTFILES_PATH/personal.zsh
-source $DOTFILES_PATH/work.zsh
-
-# version managers
-eval "`fnm env --use-on-cd --multi`"
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-export PATH="$HOME/go/bin:$PATH"
-source $HOME/.kiex/scripts/kiex
-
-# Use the latest ruby for shells by default
-chruby $(ls ~/.rubies | tail -n 1)
-
-# Custom scripts and binaries
-export PATH="$DOTFILES_PATH/bin:$PATH"
-
-# Editor/term settings
 export VISUAL=nvim
 export EDITOR=$VISUAL
 export TERM=screen-256color
@@ -30,17 +8,33 @@ export VIM_BACKGROUND=dark
 export VIM_THEME=gruvbox
 export VIM_AIRLINE_THEME=gruvbox
 
-# Completion Stuff
-##################
-zmodload zsh/complist 
+# Custom shell functions
+source $DOTFILES_PATH/git.zsh
+source $DOTFILES_PATH/commands.zsh
+source $DOTFILES_PATH/personal.zsh
+source $DOTFILES_PATH/work.zsh
+
+# Version managers
+eval "`fnm env --use-on-cd --multi`"
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+source $HOME/.kiex/scripts/kiex
+
+# Use the latest ruby for shells by default
+chruby $(ls ~/.rubies | tail -n 1)
+
+# Path
+export PATH="$DOTFILES_PATH/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
+
+# Auto complete
+zmodload zsh/complist
 autoload -Uz compinit
 compinit
 
-# Prompt
-#------------------------------
+# Prompt style
 autoload -U colors zsh/terminfo
 colors
-
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' check-for-changes true
