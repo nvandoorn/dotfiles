@@ -9,6 +9,8 @@ export VIM_THEME=gruvbox
 export VIM_AIRLINE_THEME=gruvbox
 
 # Custom shell functions
+source $DOTFILES_PATH/pairing.zsh
+source $DOTFILES_PATH/multi-branch.zsh
 source $DOTFILES_PATH/git.zsh
 source $DOTFILES_PATH/commands.zsh
 source $DOTFILES_PATH/personal.zsh

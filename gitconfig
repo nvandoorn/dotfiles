@@ -23,9 +23,3 @@
 	gpgSign = true
 [gpg]
   program = /usr/local/MacGPG2/bin/gpg2
-[git-together "authors"]
-	noah = "Noah Silvera; noah@super.gd"
-	nick = "Nick Van Doorn; nick@super.gd"
-	alistair = "Alistair Norman; alistair@super.gd"
-	jared = "Jared Norman; jared@super.gd"
-	adam = "Adam Mueller; adam@super.gd"
