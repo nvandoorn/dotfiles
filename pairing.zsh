@@ -3,7 +3,7 @@
 export GIT_AUTHORS_FILE=".git-commit-authors.txt"
 
 function find_author () {
-  cat -p $DOTFILES_PATH/git-authors.txt | fzy
+  cat $DOTFILES_PATH/git-authors.txt | fzy
 }
 
 function add_author () {
@@ -11,7 +11,7 @@ function add_author () {
 }
 
 function show_authors () {
-  cat -p $GIT_AUTHORS_FILE
+  cat $GIT_AUTHORS_FILE
 }
 
 function clear_authors () {
