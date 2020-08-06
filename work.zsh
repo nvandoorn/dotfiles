@@ -1,4 +1,3 @@
 alias cdball='cd $HOME/work/smartballot'
 alias cdone='cd $HOME/work/one_feather'
-alias supergood='hub pull-request -r jarednorman -r alistairnorman -r Noah-Silvera'
-alias ssupergood='hub pull-request -r jarednorman -r alistairnorman -r Noah-Silvera -r adammathys -r omnistegan'
+alias supergood='live -f && hub pull-request -r Noah-Silvera -r adammathys'
