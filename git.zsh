@@ -32,6 +32,7 @@ alias gsch='gch $(g branch | fzy)'
 alias pr='gd master HEAD'
 alias changelist='git diff-tree --no-commit-id --name-only -r'
 alias glog='v -c "Glog -100"'
+alias scrubby='g clean -fd'
 
 function gblame () {
   v $1 -c Gblame
