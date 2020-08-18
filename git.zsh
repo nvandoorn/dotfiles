@@ -18,7 +18,6 @@ alias grh='git reset --hard'
 alias gb='git branch'
 alias gch='git checkout'
 alias grf='git checkout --'
-alias gnu='git checkout -b'
 alias grb='git rebase'
 alias grbi='git rebase -i HEAD~12'
 alias patchy='git add -p'
@@ -33,6 +32,10 @@ alias pr='gd master HEAD'
 alias changelist='git diff-tree --no-commit-id --name-only -r'
 alias glog='v -c "Glog -100"'
 alias scrubby='g clean -fd'
+
+function gnu () {
+  git checkout -b $(kabab $@)
+}
 
 function gblame () {
   v $1 -c Gblame
