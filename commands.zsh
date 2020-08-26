@@ -77,6 +77,14 @@ function smol() {
   ffmpeg -i $1 -vcodec libx264 -pix_fmt yuv420p -profile:v baseline -level 3 $2
 }
 
-function spacify {
+function spacify() {
   tr '\n' ' ' < $1
+}
+
+function get_rake_task() {
+  strip $(bundle exec rake -T | fzy)
+}
+
+function rakey() {
+  bundle exec $(get_rake_task)
 }
