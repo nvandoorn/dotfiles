@@ -16,7 +16,7 @@ alias awake="sudo pmset -a sleep 0; sudo pmset -a hibernatemode 0; sudo pmset -a
 alias sleepy="sudo pmset -a sleep 1; sudo pmset -a hibernatemode 25; sudo pmset -a disablesleep 0;"
 
 function peek() {
-  c $(need)
+  cat $(need)
 }
 
 function thisruby() {
@@ -28,11 +28,11 @@ function vls() {
 }
 
 function vg() {
-  v -c "G"
+  vim -c "G"
 }
 
 function vs() {
-  v $(need)
+  vim $(need)
 }
 
 function ss() {
