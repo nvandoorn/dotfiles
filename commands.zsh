@@ -36,7 +36,11 @@ function vs() {
 }
 
 function ss() {
-  s $(need)
+  bundle exec rspec $(need | tee .spec-history)
+}
+
+function ssr() {
+  bundle exec rspec $(cat .spec-history)
 }
 
 function need() {
@@ -86,5 +90,9 @@ function get_rake_task() {
 }
 
 function rakey() {
-  bundle exec $(get_rake_task)
+  bundle exec $(get_rake_task | tee .rake-history)
+}
+
+function rake_replay() {
+  bundle exec $(cat .rake-history)
 }
