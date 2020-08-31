@@ -6,3 +6,5 @@
 bundle
 *.out
 *.db
+.spec-history
+.rake-history
