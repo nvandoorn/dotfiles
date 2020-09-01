@@ -5,6 +5,7 @@
 
 [core]
   excludesfile = ~/.gitignore_global
+  pager = bat
 [merge]
   tool = vimdiff
   conflictstyle = diff3
