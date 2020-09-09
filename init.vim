@@ -120,6 +120,15 @@ nnoremap <C-w>k 20<C-w>-
 nnoremap <leader><tab> :tabn<cr>
 nnoremap <leader><s-tab> :tabp<cr>
 
+map <silent> w <Plug>CamelCaseMotion_w
+map <silent> b <Plug>CamelCaseMotion_b
+map <silent> e <Plug>CamelCaseMotion_e
+map <silent> ge <Plug>CamelCaseMotion_ge
+sunmap w
+sunmap b
+sunmap e
+sunmap ge
+
 let g:picker_custom_find_executable = 'ag'
 let g:picker_custom_find_flags = '. -l'
 
