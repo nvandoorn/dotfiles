@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+kill -9 $(ps aux | fzy | gawk '{print$2}')

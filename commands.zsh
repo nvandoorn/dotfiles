@@ -55,10 +55,6 @@ function vd() {
   v $(dig)
 }
 
-function killer() {
-  kill -9 $(ps aux | fzy | gawk '{print$2}')
-}
-
 function dbup() {
   pg_ctl -D /usr/local/var/postgres start
   redis-server /usr/local/etc/redis.conf --daemonize yes
