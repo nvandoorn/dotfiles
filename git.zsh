@@ -34,7 +34,7 @@ alias glog='v -c "Glog -100"'
 alias scrubby='g clean -fd'
 
 function gnu () {
-  git checkout -b $(kabab $@)
+  git checkout -b $(echo $@ | kabab)
 }
 
 function gblame () {
