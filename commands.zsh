@@ -65,14 +65,6 @@ function dbdown() {
   pg_ctl -D /usr/local/var/postgres stop
 }
 
-function fuckredis() {
-  redis-cli flushdb
-}
-
-function diebitch() {
-  kill $(lsof -i :$1 -t)
-}
-
 function smol() {
   ffmpeg -i $1 -vcodec libx264 -pix_fmt yuv420p -profile:v baseline -level 3 $2
 }
