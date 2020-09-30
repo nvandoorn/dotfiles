@@ -35,6 +35,10 @@ function vs() {
   vim $(need)
 }
 
+function vr() {
+  vim -c Ranger
+}
+
 function ss() {
   bundle exec rspec $(need | tee .spec-history)
 }
