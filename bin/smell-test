@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+ag 'binding.pry' .
+ag 'debugger' .
+ag 'console.log' .
