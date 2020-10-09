@@ -22,5 +22,6 @@
   required = true
 [commit]
   gpgSign = true
+  verbose = true
 [gpg]
   program = /usr/local/MacGPG2/bin/gpg2
