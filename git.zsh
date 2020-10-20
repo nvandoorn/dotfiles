@@ -19,7 +19,6 @@ alias gb='git branch'
 alias gch='git checkout'
 alias grf='git checkout --'
 alias grb='git rebase'
-alias grbi='git rebase -i HEAD~12'
 alias patchy='git add -p'
 alias stash='git stash'
 alias poppy='stash pop'
@@ -51,4 +50,8 @@ function quick_fix () {
 
 function active_branch () {
   git rev-parse --abbrev-ref HEAD
+}
+
+function grbi () {
+  git rebase -i --autosquash "HEAD~${1:-12}"
 }
