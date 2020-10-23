@@ -1,0 +1,13 @@
+name: backspace
+windows:
+  - name: editor
+    root: ~/work/backspace
+    layout: tiled
+    panes:
+      - echo Welcome
+  - name: console
+    root: ~/work/backspace
+    layout: tiled
+    panes:
+      - cd api && bin/rails server -p 3003
+      - cd frontend && yarn dev
