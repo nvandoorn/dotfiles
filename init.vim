@@ -55,6 +55,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'mileszs/ack.vim'
+Plug 'preservim/tagbar'
 
 call plug#end()
 
@@ -109,6 +110,8 @@ nnoremap <Leader>x :PickerSplit<cr>
 nnoremap <Leader>p :PickerEdit<cr>
 nnoremap <Leader>t :PickerTabedit<cr>
 nnoremap <Leader>v :PickerVsplit<cr>
+nnoremap <Leader>u :PickerTag<cr>
+nnoremap <Leader>w :TagbarToggle<cr>
 nnoremap <leader>h <C-w>h
 nnoremap <leader>j <C-w>j
 nnoremap <leader>k <C-w>k
