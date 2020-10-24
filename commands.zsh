@@ -48,11 +48,11 @@ function ssr() {
 }
 
 function need() {
-  ag . -l | fzy
+  rg . -l | fzy
 }
 
 function dig() {
-  ag . | fzy -l 20 | gawk '{split($0, a, ":"); print a[1]}'
+  rg . | fzy -l 20 | gawk '{split($0, a, ":"); print a[1]}'
 }
 
 function vd() {

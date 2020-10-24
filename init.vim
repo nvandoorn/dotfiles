@@ -81,9 +81,9 @@ set mouse=a
 filetype plugin on
 runtime macros/matchit.vim
 
-set grepprg=ag\ --vimgrep\ --no-heading
+set grepprg=rg\ --vimgrep\ --no-heading
 set grepformat=%f:%l:%c:%m,%f:%l:%m
-let g:ackprg = 'ag --vimgrep --no-heading'
+let g:ackprg = 'rg --vimgrep --no-heading'
 
 " Shorthand commands
 cnoreabbrev Spec Dispatch bundle exec rspec %
@@ -129,7 +129,7 @@ sunmap b
 sunmap e
 sunmap ge
 
-let g:picker_custom_find_executable = 'ag'
+let g:picker_custom_find_executable = 'rg'
 let g:picker_custom_find_flags = '. -l'
 
 " Theme
