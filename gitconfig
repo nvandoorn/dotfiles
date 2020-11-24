@@ -5,6 +5,7 @@
 
 [core]
   excludesfile = ~/.gitignore_global
+  attributesfile = ~/.gitattributes
   pager = bat
 [merge]
   tool = vimdiff
@@ -25,3 +26,6 @@
   verbose = true
 [gpg]
   program = /usr/local/MacGPG2/bin/gpg2
+
+[diff "rspec"]
+  xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario)[ \t].*)$"

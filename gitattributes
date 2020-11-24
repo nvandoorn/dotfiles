@@ -1,0 +1,4 @@
+*.rb diff=ruby
+*.rake diff=ruby
+*.js diff=javascript
+*_spec.rb diff=rspec
