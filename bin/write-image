@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 # Make sure you have GNU dd as it supports much larger block sizes
-sudo gdd if=$1 of=$2 bs=1M status=progress
+sudo gdd if=$1 of=$2 bs=4M status=progress conv=fsync
