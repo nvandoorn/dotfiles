@@ -89,3 +89,7 @@ function rakey() {
 function rake_replay() {
   bundle exec $(cat .rake-history)
 }
+
+function again() {
+  $(history -n 1000 | fzy)
+}
