@@ -5,7 +5,9 @@ alias vl="VIM_THEME=PaperColor VIM_AIRLINE_THEME=papercolor VIM_BACKGROUND=light
 alias g=git
 alias cat=bat
 alias b=bat
+alias man=batman
 alias c=clear
+alias e=exit
 alias rm=trash
 alias bx='bundle exec'
 alias bxr='bx rake'
