@@ -61,3 +61,4 @@ setprompt() {
 setprompt
 
 bindkey -v
+ulimit -Sn 10240
