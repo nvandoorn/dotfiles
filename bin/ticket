@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+cat .tickets.csv | fzy | gawk -F, '{print $1}'
