@@ -10,6 +10,9 @@
 [merge]
   tool = vimdiff
   conflictstyle = diff3
+[pull]
+  rebase = true
+  ff = only
 [mergetool]
   path = nvim
 [color]
@@ -29,3 +32,6 @@
 
 [diff "rspec"]
   xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario)[ \t].*)$"
+[user]
+	name = Nicholas Van Doorn
+	email = vandoorn.nick@gmail.com
