@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+hdiutil create -fs HFS+ -srcfolder "$1" -volname "$2" "$2.dmg"
+
