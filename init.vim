@@ -101,7 +101,8 @@ nnoremap <Leader>] :cnext<CR>
 nnoremap <Leader>[ :cprev<CR>
 nnoremap <Leader>r :Ranger<CR>
 nnoremap <Leader>n :NERDTree %<CR>
-nnoremap <Leader>s :w <bar> :Dispatch bundle exec rspec %<cr>
+nnoremap <Leader>s :w <bar> :Dispatch bundle exec rspec --only-failures --fail-fast %<cr>
+nnoremap <Leader>ss :w <bar> :Dispatch bundle exec rspec %<cr>
 nnoremap <Leader>b :Gblame<cr>
 nnoremap <Leader>g :G<cr>
 nnoremap <Leader>c :Gcommit<cr>
