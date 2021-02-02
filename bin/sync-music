@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+rsync -ruva --ignore-existing ~/personal/music/ "/Volumes/home/nick/music"
