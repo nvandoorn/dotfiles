@@ -93,5 +93,5 @@ function rake_replay() {
 }
 
 function again() {
-  $(history -n 1000 | fzy)
+  $(history -n 1000 | uniq | fzy)
 }
