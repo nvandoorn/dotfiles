@@ -17,7 +17,7 @@ source $DOTFILES_PATH/personal.zsh
 source $DOTFILES_PATH/work.zsh
 
 # Version managers
-eval "`fnm env --use-on-cd --multi`"
+eval "`fnm env --use-on-cd`"
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 source $HOME/.kiex/scripts/kiex
