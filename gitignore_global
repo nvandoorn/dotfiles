@@ -8,4 +8,4 @@ bundle
 *.db
 .spec-history
 .rake-history
-.tickets
+.tickets*
