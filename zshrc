@@ -7,6 +7,7 @@ export TERM=screen-256color
 export VIM_BACKGROUND=dark
 export VIM_THEME=gruvbox
 export VIM_AIRLINE_THEME=gruvbox
+export DISABLE_HEADLESS_FEATURE_TESTS="true"
 
 # Custom shell functions
 source $DOTFILES_PATH/pairing.zsh
