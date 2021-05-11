@@ -35,6 +35,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'rust-lang/rust.vim'
 Plug 'vim-ruby/vim-ruby'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'kchmck/vim-coffee-script'
 
 " Extensions
 " Chuch of tpope
