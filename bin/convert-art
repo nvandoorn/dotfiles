@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+gfind $1 -iname "cover.jpg" -o -iname "cover.gif" -o -iname "cover.png" | while read file
+    do convert "$file" -thumbnail 130x130 "${file%/*}"/cover.bmp
+done
