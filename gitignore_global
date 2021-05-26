@@ -9,3 +9,5 @@ bundle
 .spec-history
 .rake-history
 .tickets*
+.bundle
+env
