@@ -31,6 +31,7 @@ alias pr='gd master HEAD'
 alias changelist='git diff-tree --no-commit-id --name-only -r'
 alias glog='v -c "Glog -100"'
 alias scrubby='g clean -fd'
+alias grecent='git branch --sort=-committerdate --format="%(committerdate:relative)%09%(refname:short)"'
 
 function gnu () {
   git checkout -b $(echo $@ | kabab)
