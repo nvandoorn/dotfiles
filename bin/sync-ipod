@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 
-rsync -ruva --ignore-existing ~/personal/music/ "/Volumes/IPOD 1/Music"
+# Sync the files.
+rsync -uva --ignore-existing ~/personal/lossless "/Volumes/IPOD 1/"
+# Convert the album art to a format Rockbox likes.
+convert-art "/Volumes/IPOD 1/lossless"
+# Delete the originals so Rockbox doesn't try and load them.
+rm -rf "/Volumes/IPOD 1/lossless/**/*.jpg"
